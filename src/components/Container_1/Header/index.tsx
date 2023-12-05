@@ -1,4 +1,4 @@
-import { Flex, Image, Text } from "@chakra-ui/react";
+import { Flex, Image, Link, Text } from "@chakra-ui/react";
 import { headerData } from "./data";
 
 
@@ -6,11 +6,11 @@ export function Header() {
     return (
         <Flex
             w='100%'
-            px={['0.5rem','1rem','3rem','5rem']}
+            px={['0.5rem', '1rem', '3rem', '5rem']}
         >
             <Flex
                 w='100%'
-                mt={['','','1rem','1rem']}
+                mt={['', '', '1rem', '1rem']}
                 justifyContent={'space-between'}
                 borderBottom={'1px solid #96989A'}
             >
@@ -21,7 +21,7 @@ export function Header() {
                     <Flex>
                         <Image
                             src="static/img/container_1/header/logo.png"
-                            maxH={['80%','100%','100%','100%']}
+                            maxH={['80%', '100%', '100%', '100%']}
                             alt='logo-principal-dra.larissa'
                         />
                     </Flex>
@@ -31,14 +31,14 @@ export function Header() {
                         justifyContent={'center'}
                     >
                         <Text
-                            fontSize={['0.875rem','2rem','2rem','2rem']}
+                            fontSize={['0.875rem', '2rem', '2rem', '2rem']}
                             color={'beige.700'}
                             fontWeight={'500'}
                         >
                             {headerData.drName}
                         </Text>
                         <Text
-                            fontSize={['0.75rem','2rem','1.5rem','1.5rem']}
+                            fontSize={['0.75rem', '2rem', '1.5rem', '1.5rem']}
                             color={'brown.600'}
                             fontWeight={'300'}
                         >
@@ -49,19 +49,22 @@ export function Header() {
 
                 <Flex
                     alignItems={'center'}
-                    gap={[1,4,4,4]}
+                    gap={[1, 4, 4, 4]}
                 >
                     <Text
                         color={'brown.300'}
-                        fontSize={['0.5rem','1rem','1rem','1rem']}
+                        fontSize={['0.5rem', '1rem', '1rem', '1rem']}
                     >
                         {headerData.conselhoRegional}
                     </Text>
-                    <Image
-                        boxSize={['2rem','2rem','3rem','3rem']}
-                        src='static/img/container_1/header/instagram-logo.png'
-                        alt='logo-instagram'
-                    />
+                    <Link href={'https://www.instagram.com/dra.larissakuhnen/'} target="_blank">
+                        <Image
+                            cursor={'pointer'}
+                            boxSize={['2rem', '2rem', '3rem', '3rem']}
+                            src='static/img/container_1/header/instagram-logo.png'
+                            alt='logo-instagram'
+                        />
+                    </Link>
                 </Flex>
             </Flex>
         </Flex>

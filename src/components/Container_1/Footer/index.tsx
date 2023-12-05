@@ -1,6 +1,7 @@
-import { Button, Flex, Heading, Icon, Image, Text, VStack } from "@chakra-ui/react";
+import { Button, Flex, Heading, Icon, Image, Link, Text, VStack } from "@chakra-ui/react";
 import { InstagramLogo, WhatsappLogo, BookOpen, MapPin } from "phosphor-react";
 import { BiMapPin } from "react-icons/bi";
+import { footerData } from "./data";
 
 
 export function Footer() {
@@ -11,7 +12,7 @@ export function Footer() {
             bgColor={'beige.100'}
             flexDir={['column', 'column', 'column', 'column', 'row']}
             py={16}
-            px={[6,4,16,16]}
+            px={[6, 4, 16, 16]}
             justifyContent={'space-between'}
             alignItems={'center'}
             gap={6}
@@ -38,16 +39,18 @@ export function Footer() {
                         <Flex
                             fontSize={['1.5rem', '1.5rem', '2.5rem', '2.5rem']}
                         >
-                            Dra. Larissa Kuhnen
+                            {footerData.info.dr_name}
                         </Flex>
 
                         <Flex
                             fontWeight={'300'}
                             fontSize={'1.125rem'}
                         >
-                            Ortodontista | Invisalign Doctor
+                            {footerData.info.dr_role}
                         </Flex>
-                        <Flex>CRO 11995</Flex>
+                        <Flex>
+                            {footerData.info.dr_code}
+                        </Flex>
                     </Flex>
                 </Flex>
                 <Flex>
@@ -55,7 +58,14 @@ export function Footer() {
                         gap={1}
                         textAlign={'center'}
                     >
-                        <Flex display='inline'>Copyright © 2023 All rights reserved. Produzido por  <Flex display={'inline'} color='#F55F5E'>  awer.co </Flex> </Flex>
+                        <Flex display='inline' gap={1}>
+                            {footerData.info.copyright}
+                            <Flex display={'inline'} color='#F55F5E'>
+                                <Link href='https://awer.co' target="_blank" _hover={{textDecoration:"none"}}>
+                                    {" "}{footerData.info.awer}
+                                </Link>
+                            </Flex>
+                        </Flex>
                     </Flex>
                 </Flex>
             </Flex>
@@ -76,11 +86,11 @@ export function Footer() {
 
                 <Flex
                     flexDir={'column'}
-                    fontSize={['1.25rem','1.25rem','1.5rem','1.5rem']}
+                    fontSize={['1.25rem', '1.25rem', '1.5rem', '1.5rem']}
                     lineHeight={'2.25rem'}
-                    fontWeight={['700','700','700','700']}
+                    fontWeight={['700', '700', '700', '700']}
                     color={'backgroundLight'}
-                    
+
                     gap={6}
                 >
 
@@ -90,19 +100,31 @@ export function Footer() {
                     >
                         <VStack>
                             <Flex>
-                                Contato
+                                {footerData.sideMenu.contact}
                             </Flex>
                             <Flex
                                 gap={4}
+
                             >
-                                <InstagramLogo size={48} />
-                                <WhatsappLogo size={48} />
+                                <Link
+                                    href={'https://www.instagram.com/dra.larissakuhnen/'}
+                                    target="_blank"
+                                    _hover={{ color: "#51ada8" }}
+                                >
+                                    <InstagramLogo size={48} />
+                                </Link>
+                                <Link
+                                    href={'https://wa.me/554791491033?text=Olá, tudo bem? Acessei o site da Dra. Larissa Kuhnen e gostaria de mais informações!'} target="_blank"
+                                    _hover={{ color: "#51ada8" }}
+                                >
+                                    <WhatsappLogo size={48} />
+                                </Link>
                             </Flex>
                         </VStack>
 
                         <VStack>
                             <Flex>
-                                Portfólio digital
+                                {footerData.sideMenu.portfolio}
                             </Flex>
                             <Flex>
                                 <BookOpen size={48} />
@@ -114,20 +136,27 @@ export function Footer() {
                         flexDir={'column'}
                     >
                         <Flex>
-                            Onde me encontrar?
+                            {footerData.sideMenu.findMe}
                         </Flex>
                         <Flex
                             fontSize={'1.125rem'}
                             fontWeight={'300'}
-                            gap={[0,0,12,12]}
+                            gap={[0, 0, 12, 12]}
+
                         >
+                            <Link
+                                href={'https://www.google.com/maps/place/The+U.NIQ+Clinic+%26+Instituto/@-23.5752616,-46.6590215,15z/data=!4m2!3m1!1s0x0:0x8fd3d699e66e562?sa=X&ved=2ahUKEwirh6qmk_mCAxXflZUCHVQbAkIQ_BJ6BAg6EAA'}
+                                target="_blank"
+                                _hover={{ color: "#51ada8", textDecoration: "none" }}
+                            >
+                                <Flex alignItems={'center'}>
+                                    <MapPin size={48} />
+                                    <Text >{footerData.sideMenu.location_clinic}</Text>
+                                </Flex>
+                            </Link>
                             <Flex alignItems={'center'}>
                                 <MapPin size={48} />
-                                <Text>THE U.NIQ CLINIC</Text>
-                            </Flex>
-                            <Flex alignItems={'center'}>
-                                <MapPin size={48} />
-                                <Text>AMAYA</Text>
+                                <Text>{footerData.sideMenu.location_amaya}</Text>
                             </Flex>
                         </Flex>
                     </Flex>
