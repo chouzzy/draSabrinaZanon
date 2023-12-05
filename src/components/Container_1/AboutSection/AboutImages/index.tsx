@@ -1,5 +1,4 @@
 import { Flex, Image, Text } from "@chakra-ui/react";
-import { aboutSectionData } from "../data";
 
 
 export function AboutImages() {
