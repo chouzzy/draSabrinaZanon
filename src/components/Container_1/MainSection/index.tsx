@@ -1,0 +1,89 @@
+import { Button, Flex, Heading, Text } from "@chakra-ui/react";
+import { mainSectionData } from "./data";
+
+
+export function MainSection() {
+
+    return (
+        <Flex
+            w='100%'
+            h='100%'
+            bgImage='static/img/container_1/mainSection/main-larissa.png'
+            bgRepeat={'no-repeat'}
+            bgPos={'bottom right'}
+            bgSize={'contain'}
+            mt={['0px','2rem','2rem','2rem']}
+
+        >
+            <Flex
+                w='100%'
+                h='100%'
+                bgImage='static/img/container_1/mainSection/main-waves.png'
+                bgRepeat={'no-repeat'}
+                bgPos={'bottom'}
+                bgSize={'contain'}
+            >
+                <Flex
+                    w='100%'
+                    h={['100%', '100%', '100%', '50rem']}
+                    ml={['0rem', '1rem', '1rem', '7rem']}
+                    bgImage='static/img/container_1/mainSection/face-art-2.png'
+                    bgRepeat={'no-repeat'}
+                    bgPos={['right top', 'center top', 'center top', 'center top']}
+                    bgSize={['0%', '72%', '42%', '36%']}
+                >
+                    <Flex
+                        flexDir={'column'}
+                        w='100%'
+                        gap={[8, 12, 8, 8]}
+                        p={[2, 2, 0, 0]}
+
+                    >
+                        <Flex
+                            fontWeight={'700'}
+                            fontSize={['2rem', '2em', '2.5rem', '2.5rem']}
+                            lineHeight={['2.25rem', '2.25rem', '3.75rem', '3.75rem']}
+                            color='backgroundDark'
+                        >
+                            {mainSectionData.title}
+                        </Flex>
+                        <Text
+                            fontWeight={'400'}
+                            color='beige.700'
+                            fontSize={['1.25rem', '1.25rem', '1.25rem', '1.25rem']}
+                            lineHeight={['1.25rem', '1.25rem', '2rem', '2rem']}
+                        >
+                            {mainSectionData.subTitle}
+                        </Text>
+                        <Text
+                            fontWeight={'500'}
+                            fontSize={['1rem', '1.25rem', '1.25rem', '1.25rem']}
+                            lineHeight={['1.25rem', '1.25rem', '2rem', '2rem']}
+                            color='brown.600'
+                            pr={8}
+                        >
+                            {mainSectionData.subTitle2}
+                        </Text>
+                        <Button
+                            w={['18rem', '20rem', '30rem', '30rem']}
+                            h={['4rem', '4rem', '4rem', '4rem']}
+                            fontWeight={'600'}
+                            fontSize={['1.25rem', '1.25rem', '1.5rem', '1.5rem']}
+                            lineHeight={'2.25rem'}
+                            bgColor='teal.500'
+                            color='backgroundLight'
+                            borderRadius={8}
+                            boxShadow={'0px 4px 4px 0 #00000044'}
+                            mt={[16, 60, 60, 12]}
+                            mb={[8, 12, 24, 12]}
+                            _hover={{ color: "teal.400", bg: 'backgroundLight' }}
+                        >
+                            {mainSectionData.buttonCallAction}
+                        </Button>
+                    </Flex>
+                    <Flex w={['100%', '100%', '80%', '100%']}></Flex>
+                </Flex>
+            </Flex>
+        </Flex>
+    )
+}
