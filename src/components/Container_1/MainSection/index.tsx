@@ -25,7 +25,7 @@ export function MainSection() {
                 <Flex
                     w='100%'
                     h={['100%', '100%', '100%', '50rem']}
-                    ml={['0rem', '1rem', '1rem', '7rem']}
+                    ml={['0rem', '1rem', '1rem', '5rem']}
                     bgImage='static/img/container_1/mainSection/face-art-2.png'
                     bgRepeat={'no-repeat'}
                     bgPos={['right top', 'center top', 'center top', 'center top']}
