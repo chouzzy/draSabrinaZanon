@@ -12,8 +12,7 @@ export function MainSection() {
             bgRepeat={'no-repeat'}
             bgPos={'bottom right'}
             bgSize={'contain'}
-            mt={['0px','2rem','2rem','2rem']}
-
+            mt={['0px', '2rem', '2rem', '2rem']}
         >
             <Flex
                 w='100%'
@@ -35,38 +34,49 @@ export function MainSection() {
                     <Flex
                         flexDir={'column'}
                         w='100%'
-                        gap={[8, 12, 8, 8]}
+                        h='100%'
+                        gap={[6, 12, 8, 8]}
                         p={[2, 2, 0, 0]}
+                        justifyContent={'space-between'}
 
                     >
                         <Flex
-                            fontWeight={'700'}
-                            fontSize={['2rem', '2em', '2.5rem', '2.5rem']}
-                            lineHeight={['2.25rem', '2.25rem', '3.75rem', '3.75rem']}
-                            color='backgroundDark'
+                            flexDir='column'
+                            gap={[6, 12, 8, 8]}
+                            h='100%'
+                            
                         >
-                            {mainSectionData.title}
+                            <Flex
+                                fontWeight={'700'}
+                                fontSize={['2rem', '2rem', '2.5rem', '2.5rem']}
+                                lineHeight={['2rem', '2.25rem', '3.75rem', '3.75rem']}
+                                color='backgroundDark'
+                            >
+                                {mainSectionData.title}
+                            </Flex>
+                            <Text
+                                fontWeight={'400'}
+                                color='beige.700'
+                                fontSize={['1rem', '1.25rem', '1.25rem', '1.25rem']}
+                                lineHeight={['1rem', '1.25rem', '2rem', '2rem']}
+                                w={['75%', '100%', '80%', '100%']}
+                            >
+                                {mainSectionData.subTitle}
+                            </Text>
+                            <Text
+                                fontWeight={'500'}
+                                fontSize={['1rem', '1.25rem', '1.25rem', '1.25rem']}
+                                lineHeight={['1rem', '1.25rem', '2rem', '2rem']}
+                                color='brown.600'
+                                w={['75%', '100%', '80%', '100%']}
+                                pr={8}
+                            >
+                                {mainSectionData.subTitle2}
+                            </Text>
                         </Flex>
-                        <Text
-                            fontWeight={'400'}
-                            color='beige.700'
-                            fontSize={['1.25rem', '1.25rem', '1.25rem', '1.25rem']}
-                            lineHeight={['1.25rem', '1.25rem', '2rem', '2rem']}
-                        >
-                            {mainSectionData.subTitle}
-                        </Text>
-                        <Text
-                            fontWeight={'500'}
-                            fontSize={['1rem', '1.25rem', '1.25rem', '1.25rem']}
-                            lineHeight={['1.25rem', '1.25rem', '2rem', '2rem']}
-                            color='brown.600'
-                            pr={8}
-                        >
-                            {mainSectionData.subTitle2}
-                        </Text>
                         <Button
                             w={['18rem', '20rem', '30rem', '30rem']}
-                            h={['4rem', '4rem', '4rem', '4rem']}
+                            h={['4rem', '4rem', '5rem', '5rem']}
                             fontWeight={'600'}
                             fontSize={['1.25rem', '1.25rem', '1.5rem', '1.5rem']}
                             lineHeight={'2.25rem'}
@@ -74,14 +84,16 @@ export function MainSection() {
                             color='backgroundLight'
                             borderRadius={8}
                             boxShadow={'0px 4px 4px 0 #00000044'}
-                            mt={[16, 60, 60, 12]}
+                            mt={[0, 60, 60, 12]}
                             mb={[8, 12, 24, 12]}
+                            mx='auto'
+
                             _hover={{ color: "teal.400", bg: 'backgroundLight' }}
                         >
                             {mainSectionData.buttonCallAction}
                         </Button>
                     </Flex>
-                    <Flex w={['100%', '100%', '80%', '100%']}></Flex>
+                    <Flex w={['0%', '100%', '80%', '100%']} ></Flex>
                 </Flex>
             </Flex>
         </Flex>

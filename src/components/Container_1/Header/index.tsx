@@ -60,9 +60,10 @@ export function Header() {
                     <Link href={'https://www.instagram.com/dra.larissakuhnen/'} target="_blank">
                         <Image
                             cursor={'pointer'}
-                            boxSize={['2rem', '2rem', '3rem', '3rem']}
                             src='static/img/container_1/header/instagram-logo.png'
                             alt='logo-instagram'
+                            _hover={{bg: '#e8af9c66', transition: '500ms'}}
+                            borderRadius={12}
                         />
                     </Link>
                 </Flex>

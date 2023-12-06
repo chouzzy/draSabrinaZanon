@@ -13,6 +13,7 @@ export function VideoSection() {
             gap={[8, 8, 0, 0]}
             mt="-1px"
             pt={[12, 12, 12, 12, 0]}
+            
         >
             <Flex
                 w={['100%', '100%', '100%', '100%', '100%']}
@@ -36,14 +37,14 @@ export function VideoSection() {
                     fontWeight={'700'}
                     fontSize={['2rem', '2em', '2.5rem', '2.5rem']}
                     lineHeight={['2.25rem', '2.25rem', '3.75rem', '3.75rem']}
-                    color='background'
+                    color='backgroundLight'
                 >
                     {videoSectionData.title}
                 </Flex>
 
                 <Text
                     fontWeight={'400'}
-                    color='background'
+                    color='backgroundLight'
                     fontSize={['1.25rem', '1.25rem', '1.25rem', '1.25rem']}
                     lineHeight={['1.25rem', '1.25rem', '2rem', '2rem']}
                 >
