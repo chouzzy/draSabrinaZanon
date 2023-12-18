@@ -1,8 +1,8 @@
 import { Button, Flex, Heading, Icon, Image, Link, Text, VStack } from "@chakra-ui/react";
-import { InstagramLogo, WhatsappLogo, BookOpen, MapPin } from "phosphor-react";
+import { InstagramLogo, WhatsappLogo, BookOpen, MapPin, FacebookLogo } from "phosphor-react";
 import { BiMapPin } from "react-icons/bi";
 import { footerData } from "./data";
-
+import { FaFacebook, FaFacebookSquare, FaInstagram, FaWhatsapp, FaWhatsappSquare } from "react-icons/fa";
 
 export function Footer() {
 
@@ -61,7 +61,7 @@ export function Footer() {
                         <Flex display='inline' gap={1}>
                             {footerData.info.copyright}
                             <Flex display={'inline'} color='#F55F5E'>
-                                <Link href='https://awer.co' target="_blank" _hover={{textDecoration:"none"}}>
+                                <Link href='https://awer.co' target="_blank" _hover={{ textDecoration: "none" }}>
                                     {" "}{footerData.info.awer}
                                 </Link>
                             </Flex>
@@ -75,8 +75,9 @@ export function Footer() {
             <Flex
                 flexDir={['column', 'column', 'column', 'row']}
                 textAlign='center'
-                alignItems={'center'}
-                justifyContent={'center'}
+                alignItems={['left','left','left','center']}
+                justifyContent={['left','left','left','center']}
+                w={['100%','100%','100%',"auto"]}
 
                 px={[0, 0, 8, 8]}
 
@@ -99,7 +100,7 @@ export function Footer() {
                         gap={12}
                     >
                         <VStack>
-                            <Flex>
+                            <Flex w='100%'>
                                 {footerData.sideMenu.contact}
                             </Flex>
                             <Flex
@@ -109,24 +110,48 @@ export function Footer() {
                                 <Link
                                     href={'https://www.instagram.com/dra.larissakuhnen/'}
                                     target="_blank"
-                                    _hover={{ color: "#51ada8" }}
+                                    borderRadius={12}
+                                    bgGradient={`linear(to-tr, #f9ce34,#ee2a7b ,#6228d7 )`}
+                                    _hover={{
+                                        color: '#e8af9c', // Inverte o gradiente no hover
+                                        transition: '500ms',
+                                    }}
                                 >
-                                    <InstagramLogo size={48} />
+                                    <FaInstagram size={48} />
                                 </Link>
                                 <Link
                                     href={'https://wa.me/554791491033?text=Olá, tudo bem? Acessei o site da Dra. Larissa Kuhnen e gostaria de mais informações!'} target="_blank"
-                                    _hover={{ color: "#51ada8" }}
+                                    color={'whatsapp'}
+                                    bg='white'
+                                    borderRadius={8}
+                                    _hover={{ color: "#e8af9c", transition: '500ms' }}
                                 >
-                                    <WhatsappLogo size={48} />
+                                    <FaWhatsappSquare size={48} />
+                                </Link>
+                                <Link
+                                    href={'https://wa.me/554791491033?text=Olá, tudo bem? Acessei o site da Dra. Larissa Kuhnen e gostaria de mais informações!'} target="_blank"
+                                    color='facebook'
+                                    bg='white'
+                                    borderRadius={8}
+                                    _hover={{ color: "#e8af9c", transition: '500ms' }}
+                                >
+                                    <FaFacebookSquare size={48} />
                                 </Link>
                             </Flex>
                         </VStack>
 
                         <VStack>
                             <Flex>
+
                                 {footerData.sideMenu.portfolio}
                             </Flex>
-                            <Flex>
+                            <Flex
+                                color='brown.600'
+                                bg='white'
+                                borderRadius={8}
+                                cursor={'pointer'}
+                                _hover={{ color: "#e8af9c", transition: '500ms' }}
+                                >
                                 <BookOpen size={48} />
                             </Flex>
                         </VStack>
@@ -150,12 +175,12 @@ export function Footer() {
                                 _hover={{ color: "#51ada8", textDecoration: "none" }}
                             >
                                 <Flex alignItems={'center'}>
-                                    <MapPin size={48} />
+                                    <MapPin color='#e31d25aa' size={48} />
                                     <Text >{footerData.sideMenu.location_clinic}</Text>
                                 </Flex>
                             </Link>
                             <Flex alignItems={'center'}>
-                                <MapPin size={48} />
+                                <MapPin color='#e31d25aa' size={48} />
                                 <Text>{footerData.sideMenu.location_amaya}</Text>
                             </Flex>
                         </Flex>

@@ -49,7 +49,7 @@ export function SpecialityBrown({title, description}: SpecialityBrownProps) {
                 w='100%'
                 fontWeight={'400'}
                 color='backgroundLight'
-                fontSize={['1rem', '1rem', '1.125rem', '1.125rem']}
+                fontSize={['1rem', '1rem', '1.125rem', '1rem']}
                 lineHeight={['1.5rem', '1.5rem', '1.875rem', '1.875rem']}
                 p={'2.5rem'}
             >

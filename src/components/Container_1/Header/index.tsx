@@ -1,5 +1,7 @@
 import { Flex, Image, Link, Text } from "@chakra-ui/react";
 import { headerData } from "./data";
+import { InstagramLogo } from "phosphor-react";
+import { FaInstagram } from "react-icons/fa";
 
 
 export function Header() {
@@ -24,6 +26,7 @@ export function Header() {
                             maxH={['80%', '100%', '100%', '100%']}
                             alt='logo-principal-dra.larissa'
                         />
+
                     </Flex>
 
                     <Flex
@@ -57,14 +60,20 @@ export function Header() {
                     >
                         {headerData.conselhoRegional}
                     </Text>
-                    <Link href={'https://www.instagram.com/dra.larissakuhnen/'} target="_blank">
-                        <Image
-                            cursor={'pointer'}
-                            src='static/img/container_1/header/instagram-logo.png'
-                            alt='logo-instagram'
-                            _hover={{bg: '#e8af9c66', transition: '500ms'}}
-                            borderRadius={12}
-                        />
+                    <Link
+                        href={'https://www.instagram.com/dra.larissakuhnen/'}
+                        target="_blank"
+                        borderRadius={12}
+                        color='white'
+                        p={1}
+                        fontSize={[32,48,48,48]}
+                        bgGradient={`linear(to-tr, #f9ce34,#ee2a7b ,#6228d7 )`}
+                        _hover={{
+                            color: '#e8af9c', // Inverte o gradiente no hover
+                            transition: '500ms',
+                        }}
+                    >
+                        <FaInstagram  />
                     </Link>
                 </Flex>
             </Flex>

@@ -10,7 +10,7 @@ export function AboutSection() {
     return (
         <Flex
             w='100%'
-            pt={['8rem', '8rem', '20rem', '20rem']}
+            pt={['8rem', '8rem', '12rem', '20rem']}
             pb={[12,12,'8rem','8rem']}
             bgColor={'backgroundLight'}
             bgImage={'static/img/container_1/benefitsSection/benefits-wave.png'}
@@ -20,10 +20,11 @@ export function AboutSection() {
 
             flexDir='column'
 
-            px='1rem'
+            px={['1rem','3rem','3rem','3rem']}
             gap={12}
 
             align={'center'}
+            
         >
 
             {/* SOBRE A DRA LARISSA */}
@@ -34,9 +35,10 @@ export function AboutSection() {
                 <Flex
                     w='100%'
                     minH={['16rem', '16rem', '24rem', '24rem']}
-                    justify={'center'}
+                    justify={['center','right','right','center']}
                     gap={2}
-                    p={4}
+                    p={[4,0,0,4]}
+                    py={[0,8,8,0]}
                 >
                     <AboutImages />
                 </Flex>
@@ -45,7 +47,7 @@ export function AboutSection() {
                     flexDir={'column'}
                     w='100%'
                     gap={[4, 4, 8, 12]}
-                    textAlign={['left','left','left','right']}
+                    textAlign={['left','right','right','right']}
                     p={[4, 4, 0, 4]}
                 >
                     <AboutParagraphs />
@@ -64,7 +66,7 @@ export function AboutSection() {
                     flexDir={'column'}
                     w='100%'
                     gap={[4, 4, 8, 12]}
-                    textAlign={['right','right','right','left']}
+                    textAlign={['right','left','left','left']}
                     p={[4, 4, 0, 4]}
                 >
                     <EducationParagraphs />
@@ -73,9 +75,10 @@ export function AboutSection() {
                 <Flex
                     w='100%'
                     minH={['16rem', '16rem', '24rem', '24rem']}
-                    justify={'center'}
+                    justify={['center','left','left','center']}
                     gap={2}
-                    p={4}
+                    p={[4,0,0,4]}
+                    py={[0,8,8,0]}
                 >
                     <EducationImages />
                 </Flex>

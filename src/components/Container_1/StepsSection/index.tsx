@@ -9,7 +9,8 @@ export function StepsSection() {
             w='100%'
             bgColor={'beige.100'}
             flexDir={['column', 'column', 'column', 'column', 'row']}
-            py={16}
+            pt={[16, 16, 16, 16]}
+            pb={[16, 0, 0, 16]}
             px={4}
             align={'flex-start'}
             gap={12}

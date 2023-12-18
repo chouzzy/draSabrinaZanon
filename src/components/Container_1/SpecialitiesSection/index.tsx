@@ -13,7 +13,7 @@ export function SpecialitiesSection() {
         <Flex
             w='100%'
             flexDir='column'
-            px='0.5rem'
+            px={['2rem','2rem','2rem','3rem']}
             gap={[2,2,12,12]}
             alignItems={'center'}
         >
@@ -33,7 +33,7 @@ export function SpecialitiesSection() {
             <Flex
                 w='100%'
                 flexDir={['column','column','column','row']}
-                textAlign={'center'}
+                textAlign={'justify'}
                 bgColor={'backgroundLight'}
                 gap={12}
             >
@@ -55,7 +55,7 @@ export function SpecialitiesSection() {
             <Flex
                 w='100%'
                 flexDir={['column-reverse','column-reverse','column-reverse','row']}
-                textAlign={'center'}
+                textAlign={'justify'}
                 bgColor={'backgroundLight'}
                 gap={12}
             >
@@ -80,7 +80,7 @@ export function SpecialitiesSection() {
             <Flex
                 w='100%'
                 flexDir={['column','column','column','row']}
-                textAlign={'center'}
+                textAlign={'justify'}
                 bgColor={'backgroundLight'}
                 gap={12}
             >

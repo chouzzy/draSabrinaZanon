@@ -46,7 +46,7 @@ export function SpecialityWhite({ title, description }: SpecialityWhiteProps) {
             <Flex
                 fontWeight={'400'}
                 color='beige.700'
-                fontSize={['1rem', '1rem', '1.25rem', '1.25rem']}
+                fontSize={['1rem', '1rem', '1.25rem', '1rem']}
                 lineHeight={['1.5rem', '1.5rem', '1.875rem', '1.875rem']}
                 p={'2.5rem'}
             >

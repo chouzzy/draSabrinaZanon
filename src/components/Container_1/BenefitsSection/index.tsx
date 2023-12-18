@@ -8,8 +8,8 @@ export function BenefitsSection() {
     return (
         <Flex
             w='100%'
-            mt="-4px"
-            pt={['8rem', '8rem', '20rem', '20rem']}
+            mt={["-4px"]}
+            pt={['8rem', '8rem', '10rem', '20rem']}
             pb={'8rem'}
             bgColor={'backgroundLight'}
             bgImage={'static/img/container_1/benefitsSection/benefits-wave.png'}
@@ -19,7 +19,7 @@ export function BenefitsSection() {
 
             flexDir='column'
 
-            px={['1rem', '1rem', '3rem', '3rem']}
+            px={['1rem', '1rem', '1rem', '3rem']}
             gap={8}
 
             align={'center'}
@@ -29,6 +29,7 @@ export function BenefitsSection() {
                 fontSize={['2rem', '2em', '2.5rem', '2.5rem']}
                 lineHeight={['2.25rem', '2.25rem', '3.75rem', '3.75rem']}
                 color='backgroundDark'
+                textAlign={['left','center','center','left']}
             >
                 {benefitsSectionData.title}
             </Flex>

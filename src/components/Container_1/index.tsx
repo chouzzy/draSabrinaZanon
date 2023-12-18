@@ -56,7 +56,7 @@ export function Container_1() {
                             <MainMobileSection />
                         </Flex>
                         <Flex
-                        h={12}>
+                            h={12}>
                             {/* <Image src={"static/img/container_1/mainSection/face-art-2.png"} maxW={'40vw'} mx='auto' alt={"imagem decorativa de sorriso"} /> */}
                         </Flex>
                         {/* button */}
