@@ -43,14 +43,6 @@ export function AboutParagraphs() {
             >
                 {aboutSectionData.about.paragraph_3.text}
             </Flex>
-            <Flex
-                fontWeight={'500'}
-                color='brown.600'
-                fontSize={['1rem', '1rem', '1.25rem', '1.25rem']}
-                lineHeight={['1.5rem', '1.5rem', '1.5rem', '1.5rem']}
-            >
-                {aboutSectionData.about.paragraph_4.text}
-            </Flex>
         </>
     )
 }

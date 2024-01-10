@@ -6,7 +6,7 @@ const stepsSectionData = {
         {
             id: 1,
             step_number: '1',
-            step_details: 'Agende sua consulta para uma avaliação completa e detalhada do seu caso',
+            step_details: 'Agende sua consulta para uma avaliação detalhada do seu caso',
         },
         {
             id: 2,
@@ -16,7 +16,7 @@ const stepsSectionData = {
         {
             id: 3,
             step_number: '3',
-            step_details: 'Com o aceite do planejamento e do orçamento passado, agendaremos todo o tratamento',
+            step_details: 'Com o aceite do planejamento e do orçamento passado, iniciaremos o seu tratamento',
         },
         {
             id: 4,

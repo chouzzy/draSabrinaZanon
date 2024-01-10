@@ -75,9 +75,9 @@ export function Footer() {
             <Flex
                 flexDir={['column', 'column', 'column', 'row']}
                 textAlign='center'
-                alignItems={['left','left','left','center']}
-                justifyContent={['left','left','left','center']}
-                w={['100%','100%','100%',"auto"]}
+                alignItems={['center', 'left', 'left', 'center']}
+                justifyContent={['center', 'left', 'left', 'center']}
+                w={['100%', '100%', '100%', "auto"]}
 
                 px={[0, 0, 8, 8]}
 
@@ -120,7 +120,7 @@ export function Footer() {
                                     <FaInstagram size={48} />
                                 </Link>
                                 <Link
-                                    href={'https://wa.me/554791491033?text=Olá, tudo bem? Acessei o site da Dra. Larissa Kuhnen e gostaria de mais informações!'} target="_blank"
+                                    href={'https://wa.me/5547997596191?text=Olá, tudo bem? Acessei o site da Dra. Larissa Kuhnen e gostaria de mais informações!'} target="_blank"
                                     color={'whatsapp'}
                                     bg='white'
                                     borderRadius={8}
@@ -129,7 +129,7 @@ export function Footer() {
                                     <FaWhatsappSquare size={48} />
                                 </Link>
                                 <Link
-                                    href={'https://wa.me/554791491033?text=Olá, tudo bem? Acessei o site da Dra. Larissa Kuhnen e gostaria de mais informações!'} target="_blank"
+                                    href={'https://www.facebook.com/dralarissakuhnen/'} target="_blank"
                                     color='facebook'
                                     bg='white'
                                     borderRadius={8}
@@ -137,22 +137,6 @@ export function Footer() {
                                 >
                                     <FaFacebookSquare size={48} />
                                 </Link>
-                            </Flex>
-                        </VStack>
-
-                        <VStack>
-                            <Flex>
-
-                                {footerData.sideMenu.portfolio}
-                            </Flex>
-                            <Flex
-                                color='brown.600'
-                                bg='white'
-                                borderRadius={8}
-                                cursor={'pointer'}
-                                _hover={{ color: "#e8af9c", transition: '500ms' }}
-                                >
-                                <BookOpen size={48} />
                             </Flex>
                         </VStack>
                     </Flex>
@@ -179,10 +163,17 @@ export function Footer() {
                                     <Text >{footerData.sideMenu.location_clinic}</Text>
                                 </Flex>
                             </Link>
-                            <Flex alignItems={'center'}>
-                                <MapPin color='#e31d25aa' size={48} />
-                                <Text>{footerData.sideMenu.location_amaya}</Text>
-                            </Flex>
+                            <Link
+                                href={'https://www.google.com/maps/place/Amaya+Medicina,+Odontologia+e+Sa%C3%BAde+-+Dra+Mara+Lucia+Mafra+-+M%C3%A9dica+Nutr%C3%B3loga+e+Dra+Larissa+Kuhnen+-+Ortodontista/@-26.9533174,-48.6421676,17z/data=!3m1!4b1!4m6!3m5!1s0x94d8cb69c329fb87:0x7bfb7140e6b51005!8m2!3d-26.9533222!4d-48.6395927!16s%2Fg%2F11trrwr0_t?entry=ttu'}
+                                target="_blank"
+                                _hover={{ color: "#51ada8", textDecoration: "none" }}
+                            >
+
+                                <Flex alignItems={'center'}>
+                                    <MapPin color='#e31d25aa' size={48} />
+                                    <Text>{footerData.sideMenu.location_amaya}</Text>
+                                </Flex>
+                            </Link>
                         </Flex>
                     </Flex>
 

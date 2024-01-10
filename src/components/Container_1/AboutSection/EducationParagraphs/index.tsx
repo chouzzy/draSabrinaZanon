@@ -30,10 +30,13 @@ export function EducationParagraphs() {
             <Flex
                 fontWeight={'400'}
                 color='backgroundDark'
+                flexDir={'column'}
+                gap={2}
                 fontSize={['1rem', '1rem', '1.25rem', '1.25rem']}
                 lineHeight={['1.5rem', '1.5rem', '1.5rem', '1.5rem']}
             >
                 {aboutSectionData.education.paragraph_2.text}
+                {aboutSectionData.education.paragraph_2.topics}
             </Flex>
             <Flex
                 fontWeight={'400'}

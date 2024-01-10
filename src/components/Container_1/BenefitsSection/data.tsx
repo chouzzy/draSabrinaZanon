@@ -11,7 +11,8 @@ const benefitsSectionData = {
         {
             id: 2,
             benefit_title: 'Liberdade sem restrições',
-            benefit_details: 'Removíveis para comer, escovar e passar fio dental, mantendo a sua rotina sem limitações.',
+            benefit_details: 'Removíveis para comer, escovar OS DENTES e passar fio dental, mantendo a sua rotina sem limitações.',
+
         },
         {
             id: 3,
@@ -21,7 +22,7 @@ const benefitsSectionData = {
         {
             id: 4,
             benefit_title: 'Eficiência rápida e precisa',
-            benefit_details: 'Tecnologia avançada para resultados eficazes, guiando seu sorriso de forma rápida e precisa.',
+            benefit_details: 'Tecnologia avançada para resultados eficazes, guiando seu tratamento de forma rápida e precisa.',
         },
         {
             id: 5,

@@ -10,7 +10,7 @@ import Script from 'next/script'
 
 
 
-const FB_PIXEL_ID = ''
+const FB_PIXEL_ID = '1469014893670193'
 
 function MyApp({ Component, pageProps }: AppProps) {
    const router = useRouter()
@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-TGLDLST');
          */}
-         <Script async src="https://www.googletagmanager.com/gtag/js?id="></Script>
+         <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11468929353"></Script>
 
          <Script id="google-tag-manager" strategy="afterInteractive" dangerouslySetInnerHTML={{
             __html: `           
@@ -45,7 +45,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', '');`
+            gtag('config', 'AW-11468929353');`
          }}>
          </Script>
 

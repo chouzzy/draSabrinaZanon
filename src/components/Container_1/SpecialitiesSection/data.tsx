@@ -47,7 +47,7 @@ const specialitiesSectionsData = {
                     <Box> Clareamento; </Box>
                     <Box> Restaurações; </Box>
                     <Box> Preenchimento Labial; </Box>
-                    <Box> Ozonioterapia e Terapia Neural, </Box>
+                    <Box> Ozonioterapia e Terapia neural. </Box>
                 </Flex>
         },
     }
