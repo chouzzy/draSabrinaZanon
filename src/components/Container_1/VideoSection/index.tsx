@@ -1,4 +1,4 @@
-import { Button, Flex, Heading, Text } from "@chakra-ui/react";
+import { Button, Flex, Heading, Link, Text } from "@chakra-ui/react";
 import { videoSectionData } from "./data";
 
 
@@ -13,7 +13,7 @@ export function VideoSection() {
             gap={[8, 8, 0, 0]}
             mt="-1px"
             pt={[12, 12, 12, 12, 0]}
-            
+
         >
             <Flex
                 w={['100%', '100%', '100%', '100%', '100%']}
@@ -24,7 +24,7 @@ export function VideoSection() {
             >
 
             </Flex>
-            
+
             <Flex
                 flexDir={['column']}
                 w='100%'
@@ -51,23 +51,29 @@ export function VideoSection() {
                     {videoSectionData.subTitle}
                 </Text>
 
-                <Button
-                    w={['18rem', '20rem', '20rem', '25rem', '32rem']}
-                    h={['4rem', '4rem', '4rem', '4rem']}
-                    ml={['0', '0', '0', '0', 'auto']}
-                    mr={['auto', 'auto', '0', '0', '0']}
-                    fontWeight={'600'}
-                    fontSize={['1.25rem', '1.25rem', '1.5rem', '1.5rem']}
-                    lineHeight={'2.25rem'}
-                    bgColor='teal.500'
-                    color='backgroundLight'
-                    borderRadius={8}
-                    boxShadow={'0px 4px 4px 0 #00000044'}
-                    _hover={{ color: "teal.400", bg: 'backgroundLight' }}
-
+                <Link
+                    href={'https://wa.me/5547997596191?text=Olá, tudo bem? Acessei o site da Dra. Larissa Kuhnen e gostaria de mais informações!'}
+                    target="_blank"
+                    _hover={{ color: "#51ada8", textDecoration: "none" }}
                 >
-                    {videoSectionData.buttonCallAction}
-                </Button>
+                    <Button
+                        w={['18rem', '20rem', '20rem', '25rem', '32rem']}
+                        h={['4rem', '4rem', '4rem', '4rem']}
+                        ml={['0', '0', '0', '0', 'auto']}
+                        mr={['auto', 'auto', '0', '0', '0']}
+                        fontWeight={'600'}
+                        fontSize={['1.25rem', '1.25rem', '1.5rem', '1.5rem']}
+                        lineHeight={'2.25rem'}
+                        bgColor='teal.500'
+                        color='backgroundLight'
+                        borderRadius={8}
+                        boxShadow={'0px 4px 4px 0 #00000044'}
+                        _hover={{ color: "teal.400", bg: 'backgroundLight' }}
+
+                    >
+                        {videoSectionData.buttonCallAction}
+                    </Button>
+                </Link>
             </Flex>
 
         </Flex>

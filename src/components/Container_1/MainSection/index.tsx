@@ -1,4 +1,4 @@
-import { Button, Flex, Heading, Text } from "@chakra-ui/react";
+import { Button, Flex, Heading, Link, Text } from "@chakra-ui/react";
 import { mainSectionData } from "./data";
 
 
@@ -44,7 +44,7 @@ export function MainSection() {
                             flexDir='column'
                             gap={[6, 12, 8, 8]}
                             h='100%'
-                            
+
                         >
                             <Flex
                                 fontWeight={'700'}
@@ -74,6 +74,13 @@ export function MainSection() {
                                 {mainSectionData.subTitle2}
                             </Text>
                         </Flex>
+
+                        <Link
+                            href={'https://wa.me/5547997596191?text=Olá, tudo bem? Acessei o site da Dra. Larissa Kuhnen e gostaria de mais informações!'}
+                            target="_blank"
+                            _hover={{ color: "#51ada8", textDecoration: "none" }}
+                        >
+                    
                         <Button
                             w={['18rem', '20rem', '30rem', '30rem']}
                             h={['4rem', '4rem', '5rem', '5rem']}
@@ -92,6 +99,7 @@ export function MainSection() {
                         >
                             {mainSectionData.buttonCallAction}
                         </Button>
+                        </Link>
                     </Flex>
                     <Flex w={['0%', '100%', '80%', '100%']} ></Flex>
                 </Flex>
