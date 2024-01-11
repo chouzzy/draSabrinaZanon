@@ -16,6 +16,7 @@ export default class MyDocument extends Document {
                <meta property="og:title" content="Dra Larissa Kuhnen - Realce a beleza do seu sorriso e busque a sua melhor versão com o Invisalign!" />
                <meta property="og:description" content="Transforme seu sorriso sem esforço com Invisalign! O poder da tecnologia invisível: alinhadores transparentes, confortáveis e eficazes. Sorria com confiança, sem restrições. Descubra o segredo do sorriso perfeito com Invisalign!" />
                <meta property="og:image" content="https://www.dralarissakuhnen.com/static/img/logo.png" />
+               <meta name="facebook-domain-verification" content="p9o4crdziw52naiebnk8mv7mj3s7pu" />
 
                {/* <!-- Twitter Meta Tags --> */}
                <meta name="twitter:card" content="summary_large_image" />
@@ -24,6 +25,7 @@ export default class MyDocument extends Document {
                <meta name="twitter:title" content="Dra Larissa Kuhnen - Realce a beleza do seu sorriso e busque a sua melhor versão com o Invisalign!" />
                <meta name="twitter:description" content="Transforme seu sorriso sem esforço com Invisalign! O poder da tecnologia invisível: alinhadores transparentes, confortáveis e eficazes. Sorria com confiança, sem restrições. Descubra o segredo do sorriso perfeito com Invisalign!" />
                <meta name="twitter:image" content="https://www.dralarissakuhnen.com/static/img/logo.png" />
+               
 
 
                <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -66,7 +68,8 @@ export default class MyDocument extends Document {
                   dangerouslySetInnerHTML={{
                      __html: `
                      <iframe src="https://www.googletagmanager.com/ns.html?id=AW-11468929353"
-                        height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+                        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+                        <meta name="facebook-domain-verification" content="p9o4crdziw52naiebnk8mv7mj3s7pu" />`,
                   }}
                />
                <Main />
