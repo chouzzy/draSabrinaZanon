@@ -14,19 +14,24 @@ const commentsSectionData = {
         title: 'Depoimentos',
         depositions: [
             {
-                testimony: 'Lorem ipsum dolor sit amet consectetur. Cursus amet commodo quis in nam nam. Tincidunt laoreet vel pharetra feugiat fusce at. In enim pellentesque purus tempus erat tincidunt non scelerisque eleifend. Egestas vestibulum ac rhoncus blandit elementum. Ullamcorper auctor phasellus imperdiet lacinia hac metus vitae pulvinar morbi.',
-                name: 'Laura Santos',
-                role: 'Paciente de Ortodontia digital com Invisalign'
+                testimony: 'Cheguei a Dra. Larissa através da indicação de colegas. Até então, não havia tido experiências com aparelhos ortodônticos. Desde o inicio do tratamento ela me passou extrema confiança, atenção e cuidado - aqui o maior elogio, pois sempre esteve ao meu lado e com interesse nas minhas queixas. Finalizei o tratamento com todas as expectativas atendidas, além da maior transparência possível. De brinde ainda ganhei a sua amizade!! Recomendadíssima."',
+                name: 'Marcos Arruda',
+                role: 'Fevereiro/2024'
             },
             {
-                testimony: 'Lorem ipsum dolor sit amet consectetur. Cursus amet commodo quis in nam nam. Tincidunt laoreet vel pharetra feugiat fusce at. In enim pellentesque purus tempus erat tincidunt non scelerisque eleifend. Egestas vestibulum ac rhoncus blandit elementum. Ullamcorper auctor phasellus imperdiet lacinia hac metus vitae pulvinar morbi.',
-                name: 'Raí Souza Vieira de Oliveira',
-                role: 'Paciente de Ortodontia digital com Invisalign'
+                testimony: 'O meu tratamento com a Dra. Larissa foi muito leve desde o início. Eu já havia usado aparelho anteriormente, mas não queria nada que aparecesse ou chamasse atenção. Ela já tinha grande experiência com o Invisalign, me apresentou um plano de tratamento que se encaixava perfeitamente nas minhas expectativas e o acompanhamento foi prático, super tranquilo e com um resultado incrível! Mais do que minha dentista, a Lari se tornou uma pessoa especial, indico de olhos fechados.',
+                name: 'Gabriela Zanette',
+                role: 'Dezembro/2023'
             },
             {
-                testimony: 'Lorem ipsum dolor sit amet consectetur. Cursus amet commodo quis in nam nam. Tincidunt laoreet vel pharetra feugiat fusce at. In enim pellentesque purus tempus erat tincidunt non scelerisque eleifend. Egestas vestibulum ac rhoncus blandit elementum. Ullamcorper auctor phasellus imperdiet lacinia hac metus vitae pulvinar morbi.',
-                name: 'Telê Santana da Silva',
-                role: 'Paciente de Ortodontia digital com Invisalign'
+                testimony: 'Meu tratamento com Invisalign foi maravilhoso. Alinhou meu sorriso, corrigiu minha mordida. Enfim, sucesso funcional e estético. Resultado realmente muito bom! A diferença antes X depois chama muita atenção (meus amigos e familiares comentam o quanto melhorou). Sem falar também na estética durante o tratamento… alinhadores transparentes, nada de sorriso metálico.',
+                name: 'Anna Carolina',
+                role: 'Janeiro/2024'
+            },
+            {
+                testimony: 'Lari, como é bom poder sorrir sem vergonha e você sabe que digo isso de boca cheia! E você é a responsável pela transformação do meu sorriso e mais do que isso, da minha confiança. Obrigada por ter cuidado tão bem de mim, sou eternamente grata por ter tanta segurança para sorrir hoje em dia! O teu trabalho realmente mudou minha vida! Obrigada por tudo.',
+                name: 'Shai Manfro',
+                role: 'Fevereiro/2024'
             }
         ]
     },
