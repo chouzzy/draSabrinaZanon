@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
     <Head>
-      <title>Dra Larissa Kuhnen</title>
+      <title>Dra Sabrina Zanon</title>
     </Head>
     <Container_1/>
     </>

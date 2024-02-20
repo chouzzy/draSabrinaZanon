@@ -11,20 +11,20 @@ export default class MyDocument extends Document {
                <meta name="keywords" content="dentista" />
 
                {/* <!-- Facebook Meta Tags --> */}
-               <meta property="og:url" content="https://www.dralarissakuhnen.com/" />
+               <meta property="og:url" content="https://www.drasabrinazanon.com/" />
                <meta property="og:type" content="website" />
-               <meta property="og:title" content="Dra Larissa Kuhnen - Realce a beleza do seu sorriso e busque a sua melhor versão com o Invisalign!" />
+               <meta property="og:title" content="Dra Sabrina Zanon - Realce a beleza do seu sorriso e busque a sua melhor versão com o Invisalign!" />
                <meta property="og:description" content="Transforme seu sorriso sem esforço com Invisalign! O poder da tecnologia invisível: alinhadores transparentes, confortáveis e eficazes. Sorria com confiança, sem restrições. Descubra o segredo do sorriso perfeito com Invisalign!" />
-               <meta property="og:image" content="https://www.dralarissakuhnen.com/static/img/logo.png" />
+               <meta property="og:image" content="https://www.drasabrinazanon.com/static/img/logo.png" />
                <meta name="facebook-domain-verification" content="p9o4crdziw52naiebnk8mv7mj3s7pu" />
 
                {/* <!-- Twitter Meta Tags --> */}
                <meta name="twitter:card" content="summary_large_image" />
-               <meta property="twitter:domain" content="dralarissakuhnen.com" />
-               <meta property="twitter:url" content="https://www.dralarissakuhnen.com//" />
-               <meta name="twitter:title" content="Dra Larissa Kuhnen - Realce a beleza do seu sorriso e busque a sua melhor versão com o Invisalign!" />
+               <meta property="twitter:domain" content="drasabrinazanon.com" />
+               <meta property="twitter:url" content="https://www.drasabrinazanon.com//" />
+               <meta name="twitter:title" content="Dra Sabrina Zanon - Realce a beleza do seu sorriso e busque a sua melhor versão com o Invisalign!" />
                <meta name="twitter:description" content="Transforme seu sorriso sem esforço com Invisalign! O poder da tecnologia invisível: alinhadores transparentes, confortáveis e eficazes. Sorria com confiança, sem restrições. Descubra o segredo do sorriso perfeito com Invisalign!" />
-               <meta name="twitter:image" content="https://www.dralarissakuhnen.com/static/img/logo.png" />
+               <meta name="twitter:image" content="https://www.drasabrinazanon.com/static/img/logo.png" />
                
 
 
@@ -56,8 +56,8 @@ export default class MyDocument extends Document {
                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-               'https://www.googletagmanager.com/gtm.js?id=AW-11468929353'+i+dl;f.parentNode.insertBefore(j,f);
-               })(window,document,'script','dataLayer','AW-11468929353');
+               'https://www.googletagmanager.com/gtm.js?id=AW-CODIGO'+i+dl;f.parentNode.insertBefore(j,f);
+               })(window,document,'script','dataLayer','AW-CODIGO');
                ` }}
                   />
                   {/* <!-- End Facebook Pixel Code --> */}
@@ -67,7 +67,7 @@ export default class MyDocument extends Document {
                <noscript
                   dangerouslySetInnerHTML={{
                      __html: `
-                     <iframe src="https://www.googletagmanager.com/ns.html?id=AW-11468929353"
+                     <iframe src="https://www.googletagmanager.com/ns.html?id=AW-CODIGO"
                         height="0" width="0" style="display:none;visibility:hidden"></iframe>
                         <meta name="facebook-domain-verification" content="p9o4crdziw52naiebnk8mv7mj3s7pu" />`,
                   }}
