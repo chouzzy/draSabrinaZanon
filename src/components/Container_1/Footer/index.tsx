@@ -1,185 +1,177 @@
 import { Button, Flex, Heading, Icon, Image, Link, Text, VStack } from "@chakra-ui/react";
-import { InstagramLogo, WhatsappLogo, BookOpen, MapPin, FacebookLogo } from "phosphor-react";
+import { InstagramLogo, WhatsappLogo, BookOpen, MapPin, FacebookLogo, ArrowRight } from "phosphor-react";
 import { BiMapPin } from "react-icons/bi";
 import { footerData } from "./data";
 import { FaFacebook, FaFacebookSquare, FaInstagram, FaWhatsapp, FaWhatsappSquare } from "react-icons/fa";
+import { useState } from "react";
+import { AgendeUmaConsultaButtonData } from "../../AgendeUmaConsultaButton/data";
 
 export function Footer() {
+
+    const mapsUrls = footerData.mapsUrls
+    const [map, setMap] = useState(mapsUrls[0].url)
+    const [active, setActive] = useState(0)
 
     return (
         <Flex
             w='100%'
-            bgColor={'beige.100'}
-            flexDir={['column', 'column', 'column', 'column', 'row']}
-            py={16}
-            px={[6, 4, 16, 16]}
-            justifyContent={'space-between'}
-            alignItems={'center'}
-            gap={6}
+            bgColor={'rose.400'}
+            color={'light.400'}
 
+            flexDir={['column', 'column', 'column', 'column', 'row']}
+            justifyContent={'center'}
+            alignItems={'center'}
+
+            gap={6}
+            p={12}
         >
 
+            {/* LOGO */}
             <Flex
                 flexDir={'column'}
-                color='backgroundLight'
-                gap={[4, 4, 12, 12]}
+                justifyContent={'center'}
+                alignItems={'center'}
+                gap={8}
             >
 
                 <Flex
-                    flexDir={['column', 'column', 'row', 'row']}
-                    alignItems={['center', 'center', 'left', 'left']}
+                    borderBottom={'1px solid #F4F1EE'}
                 >
-                    <Flex>
-                        <Image src="static/img/container_1/footer/logo.png" alt="Logo" />
-                    </Flex>
-                    <Flex
-                        flexDir={'column'}
-                        px={[0, 0, 4, 4]}
-                    >
-                        <Flex
-                            fontSize={['1.5rem', '1.5rem', '2.5rem', '2.5rem']}
-                        >
-                            {footerData.info.dr_name}
-                        </Flex>
+                    <Image
+                        src='static/img/container_1/footer/logo.png'
+                        maxW={['20rem', '25rem', '25rem', '25rem', '25rem']}
+                    />
+                </Flex>
 
-                        <Flex
-                            fontWeight={'300'}
-                            fontSize={'1.125rem'}
-                        >
-                            {footerData.info.dr_role}
-                        </Flex>
-                        <Flex>
-                            {footerData.info.dr_code}
-                        </Flex>
-                    </Flex>
-                </Flex>
-                <Flex>
-                    <Flex
-                        gap={1}
-                        textAlign={'center'}
+                <Flex
+                    fontSize={'3.5rem'}
+                    gap={2}
+                    borderBottom={'1px solid #F4F1EE'}
+                >
+                    <Link
+                        _hover={{ textDecor: 'none' }}
+                        href={AgendeUmaConsultaButtonData.href}
+                        target="_blank"
                     >
-                        <Flex display='inline' gap={1}>
-                            {footerData.info.copyright}
-                            <Flex display={'inline'} color='#F55F5E'>
-                                <Link href='https://awer.co' target="_blank" _hover={{ textDecoration: "none" }}>
-                                    {" "}{footerData.info.awer}
-                                </Link>
-                            </Flex>
+                        <Flex
+                            cursor={'pointer'}
+                            _hover={{ color: 'teal.400', transition: '600ms' }}
+                        >
+                            <WhatsappLogo weight="thin" />
                         </Flex>
-                    </Flex>
+                    </Link>
+
+                    <Link
+                        _hover={{ textDecor: 'none' }}
+                        href={AgendeUmaConsultaButtonData.instagram}
+                        target="_blank"
+                    >
+                        <Flex
+                            cursor={'pointer'}
+                            _hover={{ color: 'teal.400', transition: '600ms' }}
+                        >
+                            <InstagramLogo weight="thin" />
+                        </Flex>
+                    </Link>
                 </Flex>
+
             </Flex>
 
-
-            {/* Contatos */}
+            {/* Menu */}
             <Flex
-                flexDir={['column', 'column', 'column', 'row']}
-                textAlign='center'
-                alignItems={['center', 'left', 'left', 'center']}
-                justifyContent={['center', 'left', 'left', 'center']}
-                w={['100%', '100%', '100%', "auto"]}
-
-                px={[0, 0, 8, 8]}
-
-                gap={6}
-
+                flexDir={['column', 'row', 'row', 'row', 'column']}
+                alignItems={'flex-start'}
+                p={[2, 8, 8, 8, 8]}
+                gap={2}
             >
+                <Flex
+                    alignItems={'center'}
+                    my={['initial', 'auto', 'auto', 'auto', 'initial']}
+                    textAlign={'center'}
+                    px={[2, 12, 12, 12, 0]}
+                >
+                    <Text
+                        fontWeight={'100'}
+                        fontFamily={'Poppins'}
+                        fontSize={'2rem'}
+                    >
+                        Onde me encontrar?
+                    </Text>
+                </Flex>
 
                 <Flex
                     flexDir={'column'}
-                    fontSize={['1.25rem', '1.25rem', '1.5rem', '1.5rem']}
-                    lineHeight={'2.25rem'}
-                    fontWeight={['700', '700', '700', '700']}
-                    color={'backgroundLight'}
-
-                    gap={6}
+                    alignItems={'flex-end'}
+                    justifyContent={'center'}
+                    w={['100%', '100%', '100%', 'initial', '100%']}
+                    gap={4}
                 >
 
-                    <Flex
-                        justify={'space-between'}
-                        gap={12}
-                    >
-                        <VStack>
-                            <Flex w='100%'>
-                                {footerData.sideMenu.contact}
-                            </Flex>
+                    {mapsUrls.map((clinic, index) => {
+
+                        return (
+
                             <Flex
-                                gap={4}
-
+                                key={clinic.id}
+                                onClick={() => {
+                                    setMap(mapsUrls[index].url)
+                                    setActive(index)
+                                }}
+                                alignItems={'center'}
+                                justifyContent={'flex-end'}
+                                cursor={'pointer'}
+                                _hover={{ fontWeight: '600' }}
+                                fontWeight={active === index ? '600' : '300'}
+                                w='100%'
+                                gap={1}
                             >
-                                <Link
-                                    href={'https://www.instagram.com/dra.larissakuhnen/'}
-                                    target="_blank"
-                                    borderRadius={12}
-                                    bgGradient={`linear(to-tr, #f9ce34,#ee2a7b ,#6228d7 )`}
-                                    _hover={{
-                                        color: '#e8af9c', // Inverte o gradiente no hover
-                                        transition: '500ms',
-                                    }}
+                                {active === index ?
+                                    <Flex>
+                                        <Image
+                                            src='static/img/container_1/footer/arrow-right.png'
+                                        />
+
+                                        {/* <ArrowRight weight={active === index ? 'regular' : 'thin'} size={32} /> */}
+                                    </Flex>
+                                    :
+                                    ''
+                                }
+
+                                <Flex
+                                // w='100%'
                                 >
-                                    <FaInstagram size={48} />
-                                </Link>
-                                <Link
-                                    href={'https://wa.me/5547997596191?text=Olá, tudo bem? Acessei o site da Dra. Larissa Kuhnen e gostaria de mais informações!'} target="_blank"
-                                    color={'whatsapp'}
-                                    bg='white'
-                                    borderRadius={8}
-                                    _hover={{ color: "#e8af9c", transition: '500ms' }}
+                                    <MapPin weight={active === index ? 'regular' : 'thin'} size={32} />
+                                </Flex>
+
+                                <Flex
+                                    w='8rem'
                                 >
-                                    <FaWhatsappSquare size={48} />
-                                </Link>
-                                <Link
-                                    href={'https://www.facebook.com/dralarissakuhnen/'} target="_blank"
-                                    color='facebook'
-                                    bg='white'
-                                    borderRadius={8}
-                                    _hover={{ color: "#e8af9c", transition: '500ms' }}
-                                >
-                                    <FaFacebookSquare size={48} />
-                                </Link>
+                                    <Text
+                                        fontSize={'1.5rem'}
+                                    >
+                                        {clinic.name}
+                                    </Text>
+                                </Flex>
                             </Flex>
-                        </VStack>
-                    </Flex>
-
-                    <Flex
-                        flexDir={'column'}
-                    >
-                        <Flex>
-                            {footerData.sideMenu.findMe}
-                        </Flex>
-                        <Flex
-                            fontSize={'1.125rem'}
-                            fontWeight={'300'}
-                            gap={[0, 0, 12, 12]}
-
-                        >
-                            <Link
-                                href={'https://www.google.com/maps/place/The+U.NIQ+Clinic+%26+Instituto/@-23.5752616,-46.6590215,15z/data=!4m2!3m1!1s0x0:0x8fd3d699e66e562?sa=X&ved=2ahUKEwirh6qmk_mCAxXflZUCHVQbAkIQ_BJ6BAg6EAA'}
-                                target="_blank"
-                                _hover={{ color: "#51ada8", textDecoration: "none" }}
-                            >
-                                <Flex alignItems={'center'}>
-                                    <MapPin color='#e31d25aa' size={48} />
-                                    <Text >{footerData.sideMenu.location_clinic}</Text>
-                                </Flex>
-                            </Link>
-                            <Link
-                                href={'https://www.google.com/maps/place/Amaya+Medicina,+Odontologia+e+Sa%C3%BAde+-+Dra+Mara+Lucia+Mafra+-+M%C3%A9dica+Nutr%C3%B3loga+e+Dra+Larissa+Kuhnen+-+Ortodontista/@-26.9533174,-48.6421676,17z/data=!3m1!4b1!4m6!3m5!1s0x94d8cb69c329fb87:0x7bfb7140e6b51005!8m2!3d-26.9533222!4d-48.6395927!16s%2Fg%2F11trrwr0_t?entry=ttu'}
-                                target="_blank"
-                                _hover={{ color: "#51ada8", textDecoration: "none" }}
-                            >
-
-                                <Flex alignItems={'center'}>
-                                    <MapPin color='#e31d25aa' size={48} />
-                                    <Text>{footerData.sideMenu.location_amaya}</Text>
-                                </Flex>
-                            </Link>
-                        </Flex>
-                    </Flex>
-
+                        )
+                    })}
                 </Flex>
 
             </Flex>
+
+            {/* MAPS */}
+            <Flex>
+                <Flex
+                    w={['95vw', '90vw', '90vw', '90vw', '32rem']}
+                    h='22rem'
+                    p={4}
+                >
+                    <iframe src={map}
+                        style={{ borderRadius: '80px 80px 80px 5px' }} width="100%" height="100%" loading="lazy" />
+                </Flex>
+
+            </Flex>
+
 
         </Flex>
     )

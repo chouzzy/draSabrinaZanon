@@ -2476,13 +2476,44 @@ __metadata:
   linkType: hard
 
 "dom7@npm:^4.0.4":
-  version: 4.0.4
-  resolution: "dom7@npm:4.0.4"
+  version: 4.0.6
+  resolution: "dom7@npm:4.0.6"
   dependencies:
     ssr-window: ^4.0.0
-  checksum: b38604f74e915b4d05b6634f9ff239a708c468180f498a28ff67f2a61233697d9bd7192703b788a24541c3591e7f1a6e83a2cbf70bc871a85e033f82e19abc31
+  checksum: 616a68cbae59eaea2e717ada5855346f0ffa4ac10ab96713bb42b90efabce367213c3c491c4bf5502d177b0865c63d8abd298cc8e12bdda171340c853d6b515a
   languageName: node
   linkType: hard
+
+"draSabrinaZanon@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "draSabrinaZanon@workspace:."
+  dependencies:
+    "@chakra-ui/react": ^2.3.2
+    "@emotion/react": ^11.10.4
+    "@emotion/styled": ^11.10.4
+    "@react-icons/all-files": ^4.1.0
+    "@sendgrid/mail": ^7.7.0
+    "@types/node": ^18.7.17
+    "@types/react": ^18.0.20
+    axios: ^0.27.2
+    eslint: 8.23.1
+    eslint-config-next: 12.3.0
+    flat-color-icons: ^1.1.0
+    framer-motion: ^7.3.4
+    next: 12.3.0
+    phosphor-react: ^1.4.1
+    react: 18.2.0
+    react-dom: 18.2.0
+    react-facebook-pixel: ^1.0.4
+    react-hook-form: ^7.36.0
+    react-icons: ^4.9.0
+    react-scroll: ^1.8.9
+    sass: ^1.54.9
+    sitemap: ^7.1.1
+    swiper: ^8.4.2
+    typescript: ^4.8.3
+  languageName: unknown
+  linkType: soft
 
 "eastasianwidth@npm:^0.2.0":
   version: 0.2.0
@@ -4253,37 +4284,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"passaporte@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "passaporte@workspace:."
-  dependencies:
-    "@chakra-ui/react": ^2.3.2
-    "@emotion/react": ^11.10.4
-    "@emotion/styled": ^11.10.4
-    "@react-icons/all-files": ^4.1.0
-    "@sendgrid/mail": ^7.7.0
-    "@types/node": ^18.7.17
-    "@types/react": ^18.0.20
-    axios: ^0.27.2
-    eslint: 8.23.1
-    eslint-config-next: 12.3.0
-    flat-color-icons: ^1.1.0
-    framer-motion: ^7.3.4
-    next: 12.3.0
-    phosphor-react: ^1.4.1
-    react: 18.2.0
-    react-dom: 18.2.0
-    react-facebook-pixel: ^1.0.4
-    react-hook-form: ^7.36.0
-    react-icons: ^4.9.0
-    react-scroll: ^1.8.9
-    sass: ^1.54.9
-    sitemap: ^7.1.1
-    swiper: ^8.4.2
-    typescript: ^4.8.3
-  languageName: unknown
-  linkType: soft
-
 "path-exists@npm:^4.0.0":
   version: 4.0.0
   resolution: "path-exists@npm:4.0.0"
@@ -5043,12 +5043,12 @@ __metadata:
   linkType: hard
 
 "swiper@npm:^8.4.2":
-  version: 8.4.2
-  resolution: "swiper@npm:8.4.2"
+  version: 8.4.7
+  resolution: "swiper@npm:8.4.7"
   dependencies:
     dom7: ^4.0.4
     ssr-window: ^4.0.2
-  checksum: 84f987c8d399ed054002052d00937036d74705bf8177a9f6e7ffb035fbc9aa5b88c833503970df44f86330e632694af9d948baddc7ac32233c8d58756924cccf
+  checksum: c52be6105e12984ba024f8cb4c0627919d4069172c0021ed7c5743c3709b5a814dd50d134813ea4f7019048be6ff9dda96db8f1adf38e317c8bb285574fcd006
   languageName: node
   linkType: hard
 

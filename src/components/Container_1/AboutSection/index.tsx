@@ -1,8 +1,10 @@
-import { Flex } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 import { AboutParagraphs } from "./AboutParagraphs";
 import { AboutImages } from "./AboutImages";
 import { EducationParagraphs } from "./EducationParagraphs";
 import { EducationImages } from "./EducationImages";
+import { aboutSectionData } from "./data";
+import { AgendeUmaConsultaButton } from "../../AgendeUmaConsultaButton";
 
 
 export function AboutSection() {
@@ -10,81 +12,74 @@ export function AboutSection() {
     return (
         <Flex
             w='100%'
-            pt={['8rem', '8rem', '12rem', '20rem']}
-            pb={[12,12,'8rem','8rem']}
-            bgColor={'backgroundLight'}
-            bgImage={'static/img/container_1/benefitsSection/benefits-wave.png'}
-            bgPos={'top'}
-            bgSize={'contain'}
-            bgRepeat={'no-repeat'}
-
-            flexDir='column'
-
-            px={['1rem','3rem','3rem','3rem']}
-            gap={12}
-
-            align={'center'}
-            
+            maxW='1920px'
+            justifyContent={'center'}
+            py={[24,16,16,16,16]}
+            px={[8,8,16,12,0]}
         >
-
-            {/* SOBRE A DRA LARISSA */}
-            <Flex 
-            flexDir={['column-reverse','column-reverse','column-reverse','row']} 
-            textAlign='center'
+            <Flex
+                maxW={'1200px'}
+                flexDir={[
+                    'column-reverse',
+                    'column-reverse',
+                    'column-reverse',
+                    'row',
+                    'row'
+                ]}
+                gap={[8,16,16,16,16]}
             >
-                <Flex
-                    w='100%'
-                    minH={['16rem', '16rem', '24rem', '24rem']}
-                    justify={['center','right','right','center']}
-                    gap={2}
-                    p={[4,0,0,4]}
-                    py={[0,8,8,0]}
-                >
-                    <AboutImages />
-                </Flex>
-
+                {/* TEXTO */}
                 <Flex
                     flexDir={'column'}
+                    textAlign={'center'}
+                    justifyContent={'center'}
+                    gap={8}
                     w='100%'
-                    gap={[4, 4, 8, 12]}
-                    textAlign={['left','right','right','right']}
-                    p={[4, 4, 0, 4]}
                 >
-                    <AboutParagraphs />
+                    <Text
+                        fontFamily={'Poppins'}
+                        fontWeight={'100'}
+                        fontSize={['2.5rem','2.5rem','3rem','3rem','3rem']}
+                        lineHeight={'3.5rem'}
+                        color={'dark.400'}
+                    >
+                        {aboutSectionData.about.title}
+                    </Text>
+                    <Flex
+                        flexDir={'column'}
+                        fontFamily={'Montserrat'}
+                        fontSize={['1rem','1rem','1rem','1.125rem','1.125rem']}
+                        fontWeight={'300'}
+                        lineHeight={'1.5rem'}
+                        textAlign={'justify'}
+
+                    >
+                        {aboutSectionData.about.biography}
+                    </Flex>
+
+                    <Flex
+                        justifyContent={'center'}
+                    >
+                        <AgendeUmaConsultaButton
+                            bgColor="rose.400"
+                            fontColor="light.400"
+                        />
+                    </Flex>
+
                 </Flex>
 
 
-            </Flex>
-
-            {/* FORMAÇÃO PROFISSIONAL */}
-            <Flex 
-            flexDir={['column','column','column','row']} 
-            textAlign='center'
-            >
-                
+                {/* IMAGEM */}
                 <Flex
-                    flexDir={'column'}
                     w='100%'
-                    gap={[4, 4, 8, 12]}
-                    textAlign={['right','left','left','left']}
-                    p={[4, 4, 0, 4]}
+                    h={['20rem','20rem','32rem','auto','auto']}
+                    bgImage={'static/img/container_1/aboutSection/sabrina-about.png'}
+                    bgSize={'cover'}
+                    bgPos={'top'}
+                    borderRadius={['64px','64px','0 200px 0 200px']}
                 >
-                    <EducationParagraphs />
+
                 </Flex>
-                
-                <Flex
-                    w='100%'
-                    minH={['16rem', '16rem', '24rem', '24rem']}
-                    justify={['center','left','left','center']}
-                    gap={2}
-                    p={[4,0,0,4]}
-                    py={[0,8,8,0]}
-                >
-                    <EducationImages />
-                </Flex>
-
-
-
             </Flex>
         </Flex>
     )

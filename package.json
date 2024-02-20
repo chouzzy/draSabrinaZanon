@@ -1,5 +1,5 @@
 {
-  "name": "passaporte",
+  "name": "draSabrinaZanon",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -35,5 +35,9 @@
     "eslint": "8.23.1",
     "eslint-config-next": "12.3.0",
     "typescript": "^4.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chouzzy/dralarissazanon"
   }
 }

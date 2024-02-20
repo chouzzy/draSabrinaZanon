@@ -17,9 +17,9 @@ const mainSectionData = {
             {" "}Invisalign!{" "}
             </Flex>
         </Flex>,
-    subTitle: 'Transforme seu sorriso sem esforço com Invisalign! O poder da tecnologia invisível: alinhadores transparentes, confortáveis e eficazes. Sorria com confiança, sem restrições. Descubra o segredo do sorriso perfeito com Invisalign!',
-    subTitle2: 'Dê a devida importância à sua saúde bucal e ganhe o incrível poder de distribuir lindos sorrisos por aí!',
-    buttonCallAction: 'Entre em contato agora!'
+    subTitle: 'Desperte o brilho do sorriso das crianças',
+    subTitle2: 'Cirurgiã Dentista Especialista em Odontopediatria',
+    buttonCallAction: 'Agende uma consulta'
 }
 
 

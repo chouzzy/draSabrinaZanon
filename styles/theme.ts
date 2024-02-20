@@ -7,11 +7,11 @@ export const theme = extendTheme({
     body: 'Poppins, Avenir, Heebo'
   },
   colors: {
-    backgroundLight: "#fefefe",
+    backgroundLight: "#F4F1EE",
     backgroundDark: "#96989a",
     brown: {
       300: '#d0a288',
-      400: '#e8af9c',
+      400: '#B09E8A',
       600: '#ac5c53'
     },
     beige: {
@@ -21,6 +21,17 @@ export const theme = extendTheme({
     teal: {
       400: '#65bfbb',
       500: '#51ada8'
+    },
+    rose: {
+      400:'#B39283',
+      600:'#9E7E6F'
+    },
+    light:{
+      400:'#F4F1EE',
+      600:'#ebe4dd'
+    },
+    dark:{
+      400:'#605D5D'
     },
     facebook:'#3b5998',
     whatsapp:'#25d366',

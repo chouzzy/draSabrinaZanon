@@ -3,38 +3,55 @@ import { Flex } from "@chakra-ui/react";
 
 
 const commentsSectionData = {
-    title:
-        <Flex display={'inline'} >
-            Sorrisos
-            <Flex display={'inline'} color={'teal.400'}>
-                {" "} transformados {" "}
-            </Flex>
-        </Flex>,
-    carrousel: {
-        title: 'Depoimentos',
-        depositions: [
-            {
-                testimony: 'Cheguei a Dra. Larissa através da indicação de colegas. Até então, não havia tido experiências com aparelhos ortodônticos. Desde o inicio do tratamento ela me passou extrema confiança, atenção e cuidado - aqui o maior elogio, pois sempre esteve ao meu lado e com interesse nas minhas queixas. Finalizei o tratamento com todas as expectativas atendidas, além da maior transparência possível. De brinde ainda ganhei a sua amizade!! Recomendadíssima."',
-                name: 'Marcos Arruda',
-                role: 'Fevereiro/2024'
-            },
-            {
-                testimony: 'O meu tratamento com a Dra. Larissa foi muito leve desde o início. Eu já havia usado aparelho anteriormente, mas não queria nada que aparecesse ou chamasse atenção. Ela já tinha grande experiência com o Invisalign, me apresentou um plano de tratamento que se encaixava perfeitamente nas minhas expectativas e o acompanhamento foi prático, super tranquilo e com um resultado incrível! Mais do que minha dentista, a Lari se tornou uma pessoa especial, indico de olhos fechados.',
-                name: 'Gabriela Zanette',
-                role: 'Dezembro/2023'
-            },
-            {
-                testimony: 'Meu tratamento com Invisalign foi maravilhoso. Alinhou meu sorriso, corrigiu minha mordida. Enfim, sucesso funcional e estético. Resultado realmente muito bom! A diferença antes X depois chama muita atenção (meus amigos e familiares comentam o quanto melhorou). Sem falar também na estética durante o tratamento… alinhadores transparentes, nada de sorriso metálico.',
-                name: 'Anna Carolina',
-                role: 'Janeiro/2024'
-            },
-            {
-                testimony: 'Lari, como é bom poder sorrir sem vergonha e você sabe que digo isso de boca cheia! E você é a responsável pela transformação do meu sorriso e mais do que isso, da minha confiança. Obrigada por ter cuidado tão bem de mim, sou eternamente grata por ter tanta segurança para sorrir hoje em dia! O teu trabalho realmente mudou minha vida! Obrigada por tudo.',
-                name: 'Shai Manfro',
-                role: 'Fevereiro/2024'
-            }
-        ]
-    },
+    title: <>Sorrisos <br></br> transformados</>,
+    subtitle: 'De risos tímidos a sorrisos radiantes, testemunhe a transformação mágica dos sorrisos das crianças.',
+    carrousel: [
+        {
+            image: 'static/img/container_1/commentsSection/carousel-1.png',
+        },
+        {
+            image: 'static/img/container_1/commentsSection/carousel-2.png',
+        },
+        {
+            image: 'static/img/container_1/commentsSection/carousel-3.png',
+        }
+    ],
+    depoiments: [
+        {
+            image: 'static/img/container_1/commentsSection/depoiment-1.png',
+            name: 'Camila Bitencourt',
+            label: 'mãe',
+            depoiment: 'Essa dentista eu super recomendo!!! Gente não deixem de levar seus filhos em especialistas como a @dra.sabrinamzanon ela é além de ótima dentista o manejo com a criança é perfeito, uma habilidade, amor, paciência, carinho e estratégia sem igual! Dra.  você arrasa!!'
+        },
+        {
+            image: 'static/img/container_1/commentsSection/depoiment-1.png',
+            name: 'Camila Bitencourt',
+            label: 'mãe',
+            depoiment: 'Essa dentista eu super recomendo!!! Gente não deixem de levar seus filhos em especialistas como a @dra.sabrinamzanon ela é além de ótima dentista o manejo com a criança é perfeito, uma habilidade, amor, paciência, carinho e estratégia sem igual! Dra.  você arrasa!!'
+        },
+        {
+            image: 'static/img/container_1/commentsSection/depoiment-1.png',
+            name: 'Camila Bitencourt',
+            label: 'mãe',
+            depoiment: 'Essa dentista eu super recomendo!!! Gente não deixem de levar seus filhos em especialistas como a @dra.sabrinamzanon ela é além de ótima dentista o manejo com a criança é perfeito, uma habilidade, amor, paciência, carinho e estratégia sem igual! Dra.  você arrasa!!'
+        }
+    ],
+    odonto: {
+        title: 'O trabalho de uma Odontopediatra',
+        image:'static/img/container_1/commentsSection/kid.png',
+        description: <>
+            Trabalhar com crianças é enriquecedor, pela pureza, pela ingenuidade e pelo lúdico que te faz acessar o mundo deles e deixar as consultas mais leves. 
+            <br></br>
+            <br></br>
+            O principal eixo da Odontopediatria é a prevenção, sendo o objetivo ajudar as crianças a desenvolver hábitos saudáveis que promovam a sua saúde oral desde cedo, fazendo com que os pequenos se comprometam com os cuidados e a higiene da boca, que prefiram uma alimentação equilibrada e saudável e que consigam ter uma atitude positiva perante as visitas ao dentista.
+            <br></br>
+            <br></br>
+            O Odontopediatra cuida do bebê desde o nascimento e o monitora durante a infância, adolescência e início da idade adulta. Nesse processo a família tem um papel ativo.Portanto, o cuidado no consultório inclui as crianças e seus cuidadores.
+            <br></br>
+            <br></br>
+            Conseguir ajudar e fazer diferença na qualidade de vida das família é gratificante, porque quando você atende um paciente infantil você está atendendo a família como um todo.
+        </>
+    }
 
 }
 

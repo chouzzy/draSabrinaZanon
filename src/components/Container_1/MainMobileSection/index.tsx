@@ -1,63 +1,117 @@
-import { Button, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Image, Link, Text } from "@chakra-ui/react";
 import { mainSectionData } from "./data";
+import { IoIosArrowRoundForward } from "react-icons/io";
+import { BsArrowRight } from "react-icons/bs";
+import { AgendeUmaConsultaButton } from "../../AgendeUmaConsultaButton";
 
 
 export function MainMobileSection() {
 
     return (
+        // CONTAINER PRINCIPAL
+        <Flex
+            h='100%'
+            bgColor={'rose.400'}
+            borderRadius={'0px 0px 120px 0'}
+            boxShadow={'lg'}
+
+        >
+            {/* SEGUNDO CONTAINER */}
             <Flex
                 w='100%'
-                h='100%'
             >
+                {/* TEXTOS */}
                 <Flex
+                    flexDir={'column'}
                     w='100%'
+                    h='auto'
+                    gap={[6, 12, 8, 16, 8]}
+                    p={[2, 2, 0, 0]}
+
                 >
                     <Flex
-                        flexDir={'column'}
-                        w='100%'
                         h='100%'
-                        mt={4}
-                        gap={[6, 12, 8, 8]}
-                        p={[4, 2, 0, 0]}
-
+                        flexDir='column'
+                        justifyContent={'space-between'}
+                        gap={16}
+                        p={8}
                     >
                         <Flex
-                            flexDir='column'
-                            gap={[6, 12, 8, 8]}
-                            h='100%'
+                            flexDir={'column'}
+                            gap={[2,6,6,16,6]}
                         >
+
+
+                            {/* LOGO + TITLE */}
                             <Flex
-                                fontWeight={'700'}
-                                fontSize={['2rem', '2rem', '2.5rem', '2.5rem']}
-                                lineHeight={['2rem', '2.25rem', '3.75rem', '3.75rem']}
-                                color='backgroundDark'
+                                flexDir={'column'}
                             >
-                                {mainSectionData.title}
+                                <Image
+                                    src={"static/img/container_1/mainSection/main-logo.png"}
+                                    objectFit={'cover'}
+                                    objectPosition={'top'}
+                                />
                             </Flex>
+
+
+
+                            {/* SUBTITLE */}
                             <Text
-                                fontWeight={'400'}
-                                color='beige.700'
-                                fontSize={['1.25rem', '1.25rem', '1.25rem', '1.25rem']}
-                                lineHeight={['1.5rem', '1.25rem', '2rem', '2rem']}
+                                fontWeight={'100'}
+                                fontFamily={'Montserrat'}
+                                fontSize={['1.5rem', '1.5rem', '2rem', '4rem','4rem']}
+                                lineHeight={['1.5rem', '1.5rem', '2rem', '4rem','4rem']}
+                                textAlign={'center'}
+                                color='light.400'
                             >
                                 {mainSectionData.subTitle}
                             </Text>
+
+                            <Flex
+                                mt={4}
+                                maxH={['60vh','60vh','60vh','50vh','60vh']}
+                            >
+                                <Image
+                                    src={"static/img/container_1/mainSection/main-sabrina.png"}
+                                    borderRadius={'180px'}
+                                    boxShadow={'lg'}
+                                    objectFit={'cover'}
+                                    objectPosition={'top'}
+                                    
+                                />
+                            </Flex>
+                        </Flex>
+
+                        <Flex
+                            flexDir={'column'}
+                            gap={[6,4,4,8,4]}
+                            textAlign={'center'}
+                            alignItems={'center'}
+                        >
+
+                            {/* BUTTON TITLE */}
                             <Text
-                                fontWeight={'500'}
-                                fontSize={['1.25rem', '1.25rem', '1.25rem', '1.25rem']}
-                                lineHeight={['1.25rem', '1.25rem', '2rem', '2rem']}
-                                color='brown.600'
-                                pr={8}
-                                maxW={'75vw'}
+                                fontWeight={'300'}
+                                fontFamily={'Montserrat'}
+                                fontSize={['1rem', '1rem', '1.25rem', '2rem','4rem']}
+                                lineHeight={['1.25rem', '1.5rem', '2rem', '1rem','4rem']}
+                                color='light.400'
                             >
                                 {mainSectionData.subTitle2}
                             </Text>
+
+                            {/* BUTTON CALL TO ACTION */}
+                            <AgendeUmaConsultaButton
+                                bgColor={'light.400'}
+                                fontColor={'rose.400'}
+                            />
                         </Flex>
-                        
-                        
+
                     </Flex>
-                    <Flex w={['0%', '100%', '80%', '100%']} ></Flex>
                 </Flex>
+
+
             </Flex>
+        </Flex>
     )
 }

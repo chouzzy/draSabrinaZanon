@@ -1,107 +1,152 @@
-import { Button, Flex, Heading, Link, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Image, Link, Text } from "@chakra-ui/react";
 import { mainSectionData } from "./data";
+import { IoIosArrowRoundForward } from "react-icons/io";
+import { BsArrowRight } from "react-icons/bs";
+import { AgendeUmaConsultaButton } from "../../AgendeUmaConsultaButton";
+import { AgendeUmaConsultaButtonData } from "../../AgendeUmaConsultaButton/data";
 
 
 export function MainSection() {
 
     return (
+        // CONTAINER PRINCIPAL
         <Flex
-            w='100%'
-            h='100%'
-            bgImage='static/img/container_1/mainSection/main-larissa.png'
-            bgRepeat={'no-repeat'}
-            bgPos={'bottom right'}
-            bgSize={'contain'}
-            mt={['0px', '2rem', '2rem', '2rem']}
+            h='90vh'
+            bgColor={'rose.400'}
+            borderRadius={'0px 0px 360px 0px'}
+            position={'relative'}
         >
+            {/* SEGUNDO CONTAINER */}
             <Flex
                 w='100%'
-                h='100%'
-                bgImage='static/img/container_1/mainSection/main-waves.png'
-                bgRepeat={'no-repeat'}
-                bgPos={'bottom'}
-                bgSize={'contain'}
             >
+                {/* TEXTOS */}
                 <Flex
+                    flexDir={'column'}
                     w='100%'
-                    h={['100%', '100%', '100%', '50rem']}
-                    ml={['0rem', '1rem', '1rem', '5rem']}
-                    bgImage='static/img/container_1/mainSection/face-art-2.png'
-                    bgRepeat={'no-repeat'}
-                    bgPos={['right top', 'center top', 'center top', 'center top']}
-                    bgSize={['0%', '72%', '42%', '36%']}
+                    h='auto'
+                    gap={[6, 12, 8, 8]}
+                    p={[2, 2, 0, 0]}
+
                 >
                     <Flex
-                        flexDir={'column'}
-                        w='100%'
                         h='100%'
-                        gap={[6, 12, 8, 8]}
-                        p={[2, 2, 0, 0]}
+                        p={16}
+                        flexDir='column'
                         justifyContent={'space-between'}
-
                     >
                         <Flex
-                            flexDir='column'
-                            gap={[6, 12, 8, 8]}
-                            h='100%'
-
+                            flexDir={'column'}
+                            gap={8}
                         >
+
+
+                            {/* LOGO + TITLE */}
                             <Flex
                                 fontWeight={'700'}
                                 fontSize={['2rem', '2rem', '2.5rem', '2.5rem']}
                                 lineHeight={['2rem', '2.25rem', '3.75rem', '3.75rem']}
-                                color='backgroundDark'
+                                maxW={'36rem'}
+
                             >
-                                {mainSectionData.title}
+                                <Image
+                                    src={"static/img/container_1/mainSection/main-logo.png"}
+                                />
+
+                                <Link
+                                    _hover={{ textDecor: 'none' }}
+                                    href={AgendeUmaConsultaButtonData.href}
+                                    target="_blank"
+                                >
+                                    <Button
+                                        w='10rem'
+
+                                        position={'absolute'}
+                                        top={32}
+                                        right={0}
+                                        left={0}
+                                        mx='auto'
+
+                                        boxShadow={'0 4 4 0 #000000'}
+                                        bgColor={'light.400'}
+                                        borderRadius={'2rem'}
+
+                                        fontFamily={'Montserrat'}
+                                        color={'rose.400'}
+                                        fontSize={'0.75rem'}
+                                    >
+                                        <Flex
+                                            alignItems={'center'}
+                                            justifyItems={'center'}
+                                            gap={'1rem'}
+                                        >
+                                            <Text>
+                                                {mainSectionData.buttonCallAction}
+                                            </Text>
+
+                                        </Flex>
+                                    </Button>
+                                </Link>
                             </Flex>
+
+                            {/* SUBTITLE */}
                             <Text
-                                fontWeight={'400'}
-                                color='beige.700'
-                                fontSize={['1rem', '1.25rem', '1.25rem', '1.25rem']}
-                                lineHeight={['1rem', '1.25rem', '2rem', '2rem']}
-                                w={['75%', '100%', '80%', '100%']}
+                                fontWeight={'100'}
+                                fontFamily={'Montserrat'}
+                                fontSize={['1rem', '1.25rem', '1.25rem', '4rem']}
+                                lineHeight={['1rem', '1.25rem', '2rem', '4.8rem']}
+                                pr={8}
+                                textAlign={'left'}
+                                color='light.400'
                             >
                                 {mainSectionData.subTitle}
                             </Text>
+                        </Flex>
+
+                        <Flex
+                            flexDir={'column'}
+                            gap={6}
+                        >
+
+                            {/* BUTTON TITLE */}
                             <Text
-                                fontWeight={'500'}
+                                fontWeight={'300'}
+                                fontFamily={'Montserrat'}
                                 fontSize={['1rem', '1.25rem', '1.25rem', '1.25rem']}
                                 lineHeight={['1rem', '1.25rem', '2rem', '2rem']}
-                                color='brown.600'
+                                color='light.400'
                                 w={['75%', '100%', '80%', '100%']}
                                 pr={8}
                             >
                                 {mainSectionData.subTitle2}
                             </Text>
+
+                            {/* BUTTON CALL TO ACTION */}
+                            <AgendeUmaConsultaButton
+                                bgColor={'light.400'}
+                                fontColor={'rose.400'}
+                            />
                         </Flex>
 
-                        <Link
-                            href={'https://wa.me/5547997596191?text=Olá, tudo bem? Acessei o site da Dra. Larissa Kuhnen e gostaria de mais informações!'}
-                            target="_blank"
-                            _hover={{ color: "#51ada8", textDecoration: "none" }}
-                        >
-                    
-                        <Button
-                            w={['18rem', '20rem', '30rem', '30rem']}
-                            h={['4rem', '4rem', '5rem', '5rem']}
-                            fontWeight={'600'}
-                            fontSize={['1.25rem', '1.25rem', '1.5rem', '1.5rem']}
-                            lineHeight={'2.25rem'}
-                            bgColor='teal.500'
-                            color='backgroundLight'
-                            borderRadius={8}
-                            boxShadow={'0px 4px 4px 0 #00000044'}
-                            mt={[0, 60, 60, 12]}
-                            mb={[8, 12, 24, 12]}
-                            mx='auto'
-
-                            _hover={{ color: "teal.400", bg: 'backgroundLight' }}
-                        >
-                            {mainSectionData.buttonCallAction}
-                        </Button>
-                        </Link>
                     </Flex>
-                    <Flex w={['0%', '100%', '80%', '100%']} ></Flex>
+
+                    <Link
+                        href={'https://wa.me/5547997596191?text=Olá, tudo bem? Acessei o site da Dra. Larissa Kuhnen e gostaria de mais informações!'}
+                        target="_blank"
+                        _hover={{ color: "#51ada8", textDecoration: "none" }}
+                    >
+                    </Link>
+                </Flex>
+
+                {/* FOTO DE PERFIL SABRINA */}
+                <Flex
+                    w='100%'
+                    h='auto'
+                    bgImage={"static/img/container_1/mainSection/main-sabrina.png"}
+                    bgPos={'top'}
+                    bgSize={'cover'}
+                    borderRadius={'0px 0px 360px 360px'}
+                >
                 </Flex>
             </Flex>
         </Flex>
