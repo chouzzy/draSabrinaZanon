@@ -131,7 +131,7 @@ export function MainSection() {
                     </Flex>
 
                     <Link
-                        href={'https://wa.me/5547997596191?text=Olá, tudo bem? Acessei o site da Dra. Larissa Kuhnen e gostaria de mais informações!'}
+                        href={'https://wa.me/5547997596191?text=Olá, tudo bem? Acessei o site da Dra. Sabrina Zanon e gostaria de mais informações!'}
                         target="_blank"
                         _hover={{ color: "#51ada8", textDecoration: "none" }}
                     >
