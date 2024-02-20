@@ -7,14 +7,14 @@ export default class MyDocument extends Document {
          <Html>
             <Head>
                {/* <!-- HTML Meta Tags --> */}
-               <meta name="description" content="Realce a beleza do seu sorriso e busque a sua melhor versão com o Invisalign!" />
+               <meta name="description" content="Desperte o brilho do sorriso das crianças" />
                <meta name="keywords" content="dentista" />
 
                {/* <!-- Facebook Meta Tags --> */}
                <meta property="og:url" content="https://www.drasabrinazanon.com/" />
                <meta property="og:type" content="website" />
-               <meta property="og:title" content="Dra Sabrina Zanon - Realce a beleza do seu sorriso e busque a sua melhor versão com o Invisalign!" />
-               <meta property="og:description" content="Transforme seu sorriso sem esforço com Invisalign! O poder da tecnologia invisível: alinhadores transparentes, confortáveis e eficazes. Sorria com confiança, sem restrições. Descubra o segredo do sorriso perfeito com Invisalign!" />
+               <meta property="og:title" content="Dra Sabrina Zanon - Desperte o brilho do sorriso das crianças" />
+               <meta property="og:description" content="Na nossa odontopediatria, cuidamos dos sorrisos mais preciosos com carinho, expertise e alegria. O caminho para uma vida inteira de saúde bucal começa aqui, com cuidado que encanta e faz crescer sorrisos fortes." />
                <meta property="og:image" content="https://www.drasabrinazanon.com/static/img/logo.png" />
                <meta name="facebook-domain-verification" content="p9o4crdziw52naiebnk8mv7mj3s7pu" />
 
@@ -22,8 +22,8 @@ export default class MyDocument extends Document {
                <meta name="twitter:card" content="summary_large_image" />
                <meta property="twitter:domain" content="drasabrinazanon.com" />
                <meta property="twitter:url" content="https://www.drasabrinazanon.com//" />
-               <meta name="twitter:title" content="Dra Sabrina Zanon - Realce a beleza do seu sorriso e busque a sua melhor versão com o Invisalign!" />
-               <meta name="twitter:description" content="Transforme seu sorriso sem esforço com Invisalign! O poder da tecnologia invisível: alinhadores transparentes, confortáveis e eficazes. Sorria com confiança, sem restrições. Descubra o segredo do sorriso perfeito com Invisalign!" />
+               <meta name="twitter:title" content="Dra Sabrina Zanon - Desperte o brilho do sorriso das crianças" />
+               <meta name="twitter:description" content="Na nossa odontopediatria, cuidamos dos sorrisos mais preciosos com carinho, expertise e alegria. O caminho para uma vida inteira de saúde bucal começa aqui, com cuidado que encanta e faz crescer sorrisos fortes." />
                <meta name="twitter:image" content="https://www.drasabrinazanon.com/static/img/logo.png" />
                
 
