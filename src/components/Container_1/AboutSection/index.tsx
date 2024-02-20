@@ -1,8 +1,4 @@
 import { Flex, Text } from "@chakra-ui/react";
-import { AboutParagraphs } from "./AboutParagraphs";
-import { AboutImages } from "./AboutImages";
-import { EducationParagraphs } from "./EducationParagraphs";
-import { EducationImages } from "./EducationImages";
 import { aboutSectionData } from "./data";
 import { AgendeUmaConsultaButton } from "../../AgendeUmaConsultaButton";
 
