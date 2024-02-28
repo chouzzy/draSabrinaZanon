@@ -14,6 +14,8 @@ export function MainMobileSection() {
             bgColor={'rose.400'}
             borderRadius={'0px 0px 120px 0'}
             boxShadow={'lg'}
+            pb={[8,8,8,0,0]}
+            pt={[2,2,2,0,0]}
 
         >
             {/* SEGUNDO CONTAINER */}
@@ -34,7 +36,7 @@ export function MainMobileSection() {
                         flexDir='column'
                         justifyContent={'space-between'}
                         gap={16}
-                        p={8}
+                        p={[0,0,0,8,8]}
                     >
                         <Flex
                             flexDir={'column'}
@@ -59,7 +61,7 @@ export function MainMobileSection() {
                             <Text
                                 fontWeight={'100'}
                                 fontFamily={'Montserrat'}
-                                fontSize={['1.5rem', '1.5rem', '2rem', '4rem','4rem']}
+                                fontSize={['1.25rem', '1.5rem', '2rem', '4rem','4rem']}
                                 lineHeight={['1.5rem', '1.5rem', '2rem', '4rem','4rem']}
                                 textAlign={'center'}
                                 color='light.400'
@@ -74,10 +76,10 @@ export function MainMobileSection() {
                                 <Image
                                     src={"static/img/container_1/mainSection/main-sabrina.png"}
                                     borderRadius={'180px'}
-                                    boxShadow={'lg'}
+                                    boxShadow={['','','','lg','lg']}
                                     objectFit={'cover'}
                                     objectPosition={'top'}
-                                    
+                                    px={[2,2,2,0,0]}
                                 />
                             </Flex>
                         </Flex>

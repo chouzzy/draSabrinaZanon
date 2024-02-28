@@ -55,7 +55,7 @@ const commentsSectionData = {
         },
         {
             image: 'static/img/container_1/commentsSection/depos/Jordana-Vivan.png',
-            name: 'Jordana Vivan Haake',
+            name: 'Jordana V. Haake',
             label: 'mãe',
             depoiment: 'Oi Dra... tudo bem? Queria muito agradecer pela consulta com o Vicente. Obrigada pela paciência e carinho com seus pacientes.'
         },
@@ -103,13 +103,13 @@ const commentsSectionData = {
         },
         {
             image: 'static/img/container_1/commentsSection/depos/Tatiane-Florencio.png',
-            name: 'Tatiane Florêncio Burg',
+            name: 'Tatiane F. Burg',
             label: 'mãe',
             depoiment: 'Dra Sabrina admiro muito seu trabalho o carinho e cuidado que tem com as crianças, tornando uma consulta mais divertida e leve, quem dera se no meu tempo fosse assim rsrsrs. Uma pena que agora esta em outra cidade e não podemos mais cuidar dos dentinhos com você.'
         },
         {
             image: 'static/img/container_1/commentsSection/depos/Gabrielle-Novak.png',
-            name: 'Gabrielle T. Novak Foés',
+            name: 'Gabrielle T. N. Foés',
             label: 'mãe',
             depoiment: 'Dra. Sabrina é uma ótima profissional e sempre foi super atenciosa com meu filho! Paciente e com um jeitinho meigo, faz com que a visita ao dentista das nossas crianças seja mais leve! ❤️'
         }

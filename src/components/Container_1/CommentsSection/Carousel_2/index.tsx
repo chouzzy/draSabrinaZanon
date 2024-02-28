@@ -1,4 +1,4 @@
-import { Container, Flex, Image, Text, useBreakpointValue } from "@chakra-ui/react";
+import { Container, Divider, Flex, Image, Text, useBreakpointValue } from "@chakra-ui/react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Scrollbar, Autoplay, EffectFade, EffectCards } from 'swiper';
 
@@ -82,15 +82,14 @@ export function Carousel_2() {
                     zIndex={1}
                 >
 
+                    {/* IMAGEM */}
                     <Flex
                         w='100%'
                     >
-
-
-
                         <Image
                             src={image}
-                            h={['100%', '100%', '32rem', '32rem', '100%']}
+                            h={['16rem', '20rem', '32rem', '32rem', '100%']}
+                            w='100%'
                             px={[8, 8, 24, 8, 8]}
                             objectFit={'cover'}
                             objectPosition={'top'}
@@ -110,44 +109,56 @@ export function Carousel_2() {
                         px={[8, 8, 24, 4, 4]}
                         pt={16}
                     >
-                        <Flex>
-                            <Text
-                                fontFamily={'Montserrat'}
-                                fontSize={['2rem', '2rem', '2rem', '2.75rem', '2.75rem']}
-                                fontWeight={'600'}
-                            >
-                                {name}
-                            </Text>
-                        </Flex>
+                        <Flex
+                            flexDir={'column'}
+                        >
 
-                        <Flex>
-                            <Text
-                                fontFamily={'Montserrat'}
-                                fontSize={'1.25rem'}
-                                fontWeight={'300'}
-                            >
-                                {label}
-                            </Text>
-                        </Flex>
 
-                        <Flex>
-                            <Text
-                                fontFamily={'Montserrat'}
-                                fontSize={'1rem'}
-                                fontWeight={'400'}
-                                fontStyle={'italic'}
-                                py={8}
-                            >
-                                {depoiment}
-                            </Text>
-                        </Flex>
+                            <Flex>
+                                <Text
+                                    fontFamily={'Montserrat'}
+                                    fontSize={['1.75rem', '1.75rem', '2rem', '2.5rem', '2.5rem']}
+                                    fontWeight={'600'}
+                                >
+                                    {name}
+                                </Text>
+                            </Flex>
 
+                            <Flex>
+                                <Text
+                                    fontFamily={'Montserrat'}
+                                    fontSize={'1.25rem'}
+                                    fontWeight={'300'}
+                                >
+                                    {label}
+                                </Text>
+                            </Flex>
+
+                            <Flex
+                                pb={2}
+                            >
+                                <Text
+                                    fontFamily={'Montserrat'}
+                                    fontSize={['0.875rem','1rem','1rem','1rem','1rem']}
+                                    fontWeight={'400'}
+                                    fontStyle={'italic'}
+                                    py={8}
+                                    h='100%'
+                                    minH={['18rem','14rem','14rem','10rem','20rem']}
+                                    borderBottom={'1px solid #00000033'}
+                                >
+                                    {depoiment}
+                                </Text>
+                            </Flex>
+                        </Flex>
+                        
                         <Flex
                             mt='auto'
                         >
                             <Flex
                                 flexDir={'row'}
                             >
+                                {/* SETA PRA ESQUERDA */}
                                 <Flex
                                     _hover={{ color: "teal.400", transitionDuration: '500ms' }}
                                     color="rose.400"
@@ -156,11 +167,11 @@ export function Carousel_2() {
                                     onClick={() => {
                                         if (currentSlide > 0) {
                                             setCurrentSlide(currentSlide - 1)
-                                
+
                                         } else {
-                                            setCurrentSlide(depos.length -1)
+                                            setCurrentSlide(depos.length - 1)
                                         }
-                                        
+
                                     }}
                                 >
                                     <CaretCircleLeft
@@ -168,19 +179,21 @@ export function Carousel_2() {
                                         weight="thin"
                                     />
                                 </Flex>
+
+                                {/* SETA PRA DIREITA */}
                                 <Flex
                                     _hover={{ color: "teal.400", transitionDuration: '500ms' }}
                                     color="rose.400"
                                     fontWeight={'200'}
                                     cursor={'pointer'}
                                     onClick={() => {
-                                        if (depos.length -1 > currentSlide) {
+                                        if (depos.length - 1 > currentSlide) {
                                             setCurrentSlide(currentSlide + 1)
-                                
+
                                         } else {
                                             setCurrentSlide(0)
                                         }
-                                        
+
                                     }}
                                 >
                                     <CaretCircleRight
@@ -190,18 +203,18 @@ export function Carousel_2() {
                                 </Flex>
                             </Flex>
                             <Flex
-                                fontSize='16rem'
                                 color={'beige.100'}
                                 ml='auto'
                                 gap={4}
                             >
                                 <Image
                                     src='static/img/container_1/commentsSection/quote.png'
-                                    maxW={[24, 32, 32, 32, 32]}
+                                    // w={[24, 32, 32, 32, '100%']}
+                                    h={[24, 32, 32, 32, '5%']}
                                 />
                                 <Image
                                     src='static/img/container_1/commentsSection/quote.png'
-                                    maxW={[24, 32, 32, 32, 32]}
+                                    h={[24, 32, 32, 32, '5%']}
                                 />
                             </Flex>
                         </Flex>

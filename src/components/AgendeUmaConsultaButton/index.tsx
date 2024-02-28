@@ -19,8 +19,8 @@ export function AgendeUmaConsultaButton({ bgColor = 'light.400', fontColor = 'ro
         >
 
             <Button
-                w='18rem'
-                h='3.75rem'
+                w={['15rem','18rem','18rem','18rem','18rem']}
+                h={['3.5rem','3.75rem','3.75rem','3.75rem','3.75rem']}
                 boxShadow={'0 4 4 0 #000000'}
                 bgColor={bgColor}
                 borderRadius={'2rem'}

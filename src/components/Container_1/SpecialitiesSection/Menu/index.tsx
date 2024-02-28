@@ -167,7 +167,7 @@ export function Menu() {
                     </Text>
 
                     <Flex
-                        mx={['auto','auto','auto','initial','initial']}
+                        mx={['auto', 'auto', 'auto', 'initial', 'initial']}
                     >
                         <AgendeUmaConsultaButton
                             bgColor="light.400"
@@ -185,7 +185,7 @@ export function Menu() {
                 >
                     <Image
                         src={specialitiesSectionsData.specs[activeIndex].image}
-                        minW={'25rem'}
+                        minW={['100%','100%','20rem','20rem','20rem']}
                         objectFit={'cover'}
                         borderRadius={[
                             "40px 40px 40px 40px",
