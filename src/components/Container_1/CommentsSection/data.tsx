@@ -102,19 +102,17 @@ const commentsSectionData = {
             depoiment: 'Oi Sabrina, td bem? Quero agradecer o seu ótimo atendimento para meu João. Ele tem autismo e sempre foi atendido com a maior paciência, usando o tigrao de forma lúdica. Obrigada por tanto ❤️'
         },
         {
+            image: 'static/img/container_1/commentsSection/depos/Tatiane-Florencio.png',
+            name: 'Tatiane Florêncio Burg',
+            label: 'mãe',
+            depoiment: 'Dra Sabrina admiro muito seu trabalho o carinho e cuidado que tem com as crianças, tornando uma consulta mais divertida e leve, quem dera se no meu tempo fosse assim rsrsrs. Uma pena que agora esta em outra cidade e não podemos mais cuidar dos dentinhos com você.'
+        },
+        {
             image: 'static/img/container_1/commentsSection/depos/Gabrielle-Novak.png',
             name: 'Gabrielle T. Novak Foés',
             label: 'mãe',
             depoiment: 'Dra. Sabrina é uma ótima profissional e sempre foi super atenciosa com meu filho! Paciente e com um jeitinho meigo, faz com que a visita ao dentista das nossas crianças seja mais leve! ❤️'
-        },
-        {
-            image: 'static/img/container_1/commentsSection/depos/Tatiane-Florencio.png',
-            name: 'Tatiane Florêncio Burg',
-            label: 'mãe',
-            depoiment: <>
-            Sou Tatiane mamãe da Alice de 6 aninhos, procuramos a Dra Sabrina pela indicação de uma amiga, a mamãe da Valentina pois Alice precisava fazer consulta de rotina, e nos deparamos com essa profissional incrível que conquistou a Alice desde a primeira consulta. Quando ficávamos alguns meses sem ir na Dra Sabrina ela me questionava quando era dia de ir na dentista novamente. Lá ela deixava a Dra fazer a limpezas tranquilamente, deitada relaxada com a perna cruzada hahahah, até anestesia tomou para tirar um bichinho e foi super de boa, quando rolava uns chorinhos a Dra cuidadosamente conversava com ela e assim seguia o atendimento. 
-            </>
-        },
+        }
     ],
     odonto: {
         title: 'O trabalho de uma Odontopediatra',

@@ -8,7 +8,7 @@ import { ImTongue } from "react-icons/im";
 
 const specialitiesSectionsData = {
     title: 'Minhas especialidades',
-    subTitle: 'Desvendando sorrisos, especialidades que transformam vidas: encontre aqui o cuidado personalizado que sua saúde bucal merece.',
+    subTitle: 'Graduada em Odontologia pela Universidade de Passo Fundo (UPF), busquei me especializar em diferentes áreas para oferecer um atendimento completo. Realizei atualização em Endodontia pelo IMED, me especializei em Odontopediatria pelo Instituto Odontológicos das Américas (IOA) e em Harmonização Orofacial pela ORBIS.',
     specs: [
         {
             name: 'Gestantes',

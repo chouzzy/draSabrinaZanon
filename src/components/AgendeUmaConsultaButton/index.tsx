@@ -26,6 +26,7 @@ export function AgendeUmaConsultaButton({ bgColor = 'light.400', fontColor = 'ro
                 borderRadius={'2rem'}
                 fontFamily={'Montserrat'}
                 color={fontColor}
+                _hover={{bgColor:'teal.400', color:'white'}}
 
             >
                 <Flex

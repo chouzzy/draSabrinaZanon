@@ -62,10 +62,12 @@ export function MainSection() {
                                         w='10rem'
 
                                         position={'absolute'}
-                                        top={32}
+                                        top={48}
                                         right={0}
                                         left={0}
                                         mx='auto'
+
+                                        _hover={{bgColor:'teal.400', color:'white'}}
 
                                         boxShadow={'0 4 4 0 #000000'}
                                         bgColor={'light.400'}

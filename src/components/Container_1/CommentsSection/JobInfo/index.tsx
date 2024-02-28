@@ -12,7 +12,8 @@ export function JobInfo() {
             w='100%'
             maxW='1920px'
             justifyContent={'center'}
-            py={[24, 16, 16, 16, 16]}
+            pt={[0, 16, 16, 16, 16]}
+            pb={[24, 16, 16, 16, 16]}
             px={[8, 8, 16, 12, 0]}
         >
             <Flex
