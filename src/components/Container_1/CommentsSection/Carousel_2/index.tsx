@@ -1,4 +1,4 @@
-import { Flex, Image, Text, useBreakpointValue } from "@chakra-ui/react";
+import { Container, Flex, Image, Text, useBreakpointValue } from "@chakra-ui/react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Scrollbar, Autoplay, EffectFade, EffectCards } from 'swiper';
 
@@ -33,6 +33,7 @@ export function Carousel_2() {
             w='100%'
             h='100%'
 
+
             zIndex="0"
             flexDir={'row'}
 
@@ -47,6 +48,8 @@ export function Carousel_2() {
                 maxW={['100vw', '100vw', '100vw', '840px', '1080px']}
                 position='relative'
             >
+
+                {/* PETAL LEFT */}
                 <Flex
                     w={['6rem', '6rem', '8rem', '10rem', '12rem']}
                     h={['6rem', '6rem', '8rem', '10rem', '12rem']}
@@ -57,32 +60,28 @@ export function Carousel_2() {
                     opacity={'32%'}
                     border={'6px solid #9E7E6F'}
                     borderRadius={'0px 95px  95px 95px'}
+
                 >
                 </Flex>
+            
                 <Swiper
                     spaceBetween={0}
                     slidesPerView={1}
                     loop
 
-                    cardsEffect={{
-                        perSlideOffset: 8,
-                        perSlideRotate: 2,
-                        rotate: true,
-                        slideShadows: true
-                    }}
                     onSwiper={(swiper) => (carouselRef_2.current = swiper)}
                 >
                     {
-                        commentsSectionData.depoiments.map(slide => {
+                        commentsSectionData.depoiments.map((slide, index) => {
                             return (
-                                <SwiperSlide key={1}>
+                                <SwiperSlide key={index}>
 
                                     <Flex
                                         flexDir={['column', 'column', 'column', 'column', 'row']}
+                                        h='100%'
                                     >
 
                                         <Flex
-                                            flexDir={'column'}
                                             w='100%'
                                         >
 
@@ -113,7 +112,7 @@ export function Carousel_2() {
                                             <Flex>
                                                 <Text
                                                     fontFamily={'Montserrat'}
-                                                    fontSize={['2rem','2rem','2rem','2.75rem','2.75rem']}
+                                                    fontSize={['2rem', '2rem', '2rem', '2.75rem', '2.75rem']}
                                                     fontWeight={'600'}
                                                 >
                                                     {slide.name}
@@ -133,7 +132,7 @@ export function Carousel_2() {
                                             <Flex>
                                                 <Text
                                                     fontFamily={'Montserrat'}
-                                                    fontSize={'1.25rem'}
+                                                    fontSize={'1rem'}
                                                     fontWeight={'400'}
                                                     fontStyle={'italic'}
                                                     py={8}
@@ -142,7 +141,9 @@ export function Carousel_2() {
                                                 </Text>
                                             </Flex>
 
-                                            <Flex>
+                                            <Flex
+                                                mt='auto'
+                                            >
                                                 <Flex
                                                     flexDir={'row'}
                                                 >
@@ -179,16 +180,15 @@ export function Carousel_2() {
                                                 >
                                                     <Image
                                                         src='static/img/container_1/commentsSection/quote.png'
-                                                        maxW={[24,32,32,32,32]}
+                                                        maxW={[24, 32, 32, 32, 32]}
                                                     />
                                                     <Image
                                                         src='static/img/container_1/commentsSection/quote.png'
-                                                        maxW={[24,32,32,32,32]}
+                                                        maxW={[24, 32, 32, 32, 32]}
                                                     />
                                                 </Flex>
                                             </Flex>
                                         </Flex>
-
                                     </Flex>
                                 </SwiperSlide>
                             )

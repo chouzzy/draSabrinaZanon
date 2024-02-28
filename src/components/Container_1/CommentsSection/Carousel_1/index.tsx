@@ -79,9 +79,9 @@ export function Carousel_1() {
                         onSwiper={(swiper) => (carouselRef_1.current = swiper)}
                     >
                         {
-                            commentsSectionData.carrousel.map(slide => {
+                            commentsSectionData.carrousel.map((slide, index) => {
                                 return (
-                                    <SwiperSlide key={1}>
+                                    <SwiperSlide key={index}>
 
                                         <Flex>
 

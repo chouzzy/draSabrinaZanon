@@ -17,7 +17,7 @@ export function VideoSection() {
             <Flex
                 flexDir={'column'}
                 maxW='76rem'
-                px={[8,24,24,24,24]}
+                px={[8, 24, 24, 24, 24]}
                 py={4}
                 mx='auto'
                 gap={20}
@@ -40,9 +40,9 @@ export function VideoSection() {
                     >
                         <Text
                             color={'rose.600'}
-                            fontSize={['2.25rem','2.75rem','2.75rem','2.75rem','2.75rem']}
+                            fontSize={['2.25rem', '2.75rem', '2.75rem', '2.75rem', '2.75rem']}
                             fontWeight={'600'}
-                            lineHeight={['2.5rem','3.5rem','3.5rem','3.5rem','3.5rem']}
+                            lineHeight={['2.5rem', '3.5rem', '3.5rem', '3.5rem', '3.5rem']}
                             fontFamily={'Montserrat'}
                         >
                             {videoSectionData.title}
@@ -58,11 +58,11 @@ export function VideoSection() {
 
                         {/* CIRCLE 1 */}
                         <Flex
-                            w={['6rem','6rem','8rem','10rem','12rem']}
-                            h={['6rem','6rem','8rem','10rem','12rem']}
+                            w={['6rem', '6rem', '8rem', '10rem', '12rem']}
+                            h={['6rem', '6rem', '8rem', '10rem', '12rem']}
                             position={'absolute'}
-                            left={['0rem','-3rem','-4rem','-5rem','-6rem']}
-                            top={['-3rem','-3rem','-4rem','-5rem','-6rem']}
+                            left={['0rem', '-3rem', '-4rem', '-5rem', '-6rem']}
+                            top={['-3rem', '-3rem', '-4rem', '-5rem', '-6rem']}
                             bgColor={'rose.400'}
                             opacity={'32%'}
                             border={'6px solid #9E7E6F'}
@@ -71,11 +71,11 @@ export function VideoSection() {
                         </Flex>
                         {/* CIRCLE 2 */}
                         <Flex
-                            w={['6rem','6rem','8rem','10rem','12rem']}
-                            h={['6rem','6rem','8rem','10rem','12rem']}
+                            w={['6rem', '6rem', '8rem', '10rem', '12rem']}
+                            h={['6rem', '6rem', '8rem', '10rem', '12rem']}
                             position={'absolute'}
-                            right={['0rem','-3rem','-4rem','-5rem','-6rem']}
-                            bottom={['-3rem','-3rem','-4rem','-5rem','-6rem']}
+                            right={['0rem', '-3rem', '-4rem', '-5rem', '-6rem']}
+                            bottom={['-3rem', '-3rem', '-4rem', '-5rem', '-6rem']}
                             bgColor={'rose.400'}
                             opacity={'32%'}
                             border={'6px solid #9E7E6F'}
@@ -87,12 +87,11 @@ export function VideoSection() {
                         {/* BACKGROUND VIDEO */}
                         <Flex
                             w='100%'
-                            h={['300px','300px','528px','528px','528px']}
+                            h={['300px', '300px', '528px', '528px', '528px']}
                             zIndex={1}
-                            bgSize={'cover'}
-                            bgPos={'center'}
-                            bgImage={'static/img/container_1/videoSection/video-background.png'}
                         >
+
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/OOGjJZqbCAg?si=-jwyyHfgTea-NV0M" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
 
                         </Flex>
 
@@ -118,7 +117,7 @@ export function VideoSection() {
                         bgImage={'static/img/container_1/videoSection/mom-kid-doctor.png'}
                         bgSize={'cover'}
                         bgPos={'center'}
-                        h={['420px','420px','528px','528px','528px']}
+                        h={['420px', '420px', '528px', '528px', '528px']}
                         borderRadius={'0px 0px 240px 240px'}
                         w='100%'
                     >
@@ -129,7 +128,7 @@ export function VideoSection() {
                     <Flex
                         flexDirection={'column'}
                         w={'100%'}
-                        p={[0,0,0,0,12]}
+                        p={[0, 0, 0, 0, 12]}
                         gap={8}
                     >
 
@@ -154,13 +153,13 @@ export function VideoSection() {
                         </Flex>
 
                         <Flex
-                        mx={['auto','auto','auto','auto','initial']}
+                            mx={['auto', 'auto', 'auto', 'auto', 'initial']}
                         >
                             <AgendeUmaConsultaButton
                                 bgColor="brown.400"
                                 fontColor="light.400"
-                                
-                        />
+
+                            />
                         </Flex>
                     </Flex>
                 </Flex>

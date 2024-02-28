@@ -7,34 +7,114 @@ const commentsSectionData = {
     subtitle: 'De risos tímidos a sorrisos radiantes, testemunhe a transformação mágica dos sorrisos das crianças.',
     carrousel: [
         {
-            image: 'static/img/container_1/commentsSection/carousel-1.png',
+            image: 'static/img/container_1/commentsSection/carousel/carousel-1.png',
         },
         {
-            image: 'static/img/container_1/commentsSection/carousel-2.png',
+            image: 'static/img/container_1/commentsSection/carousel/carousel-2.png',
         },
         {
-            image: 'static/img/container_1/commentsSection/carousel-3.png',
-        }
+            image: 'static/img/container_1/commentsSection/carousel/carousel-3.png',
+        },
+        {
+            image: 'static/img/container_1/commentsSection/carousel/carousel-4.png',
+        },
+        {
+            image: 'static/img/container_1/commentsSection/carousel/carousel-5.png',
+        },
+        {
+            image: 'static/img/container_1/commentsSection/carousel/carousel-6.png',
+        },
+        {
+            image: 'static/img/container_1/commentsSection/carousel/carousel-7.png',
+        },
+        {
+            image: 'static/img/container_1/commentsSection/carousel/carousel-8.png',
+        },
+        {
+            image: 'static/img/container_1/commentsSection/carousel/carousel-9.png',
+        },
+        {
+            image: 'static/img/container_1/commentsSection/carousel/carousel-10.png',
+        },
+        {
+            image: 'static/img/container_1/commentsSection/carousel/carousel-11.png',
+        },
     ],
     depoiments: [
         {
-            image: 'static/img/container_1/commentsSection/depoiment-1.png',
+            image: 'static/img/container_1/commentsSection/depos/Camila-Bitencourt.png',
             name: 'Camila Bitencourt',
             label: 'mãe',
             depoiment: 'Essa dentista eu super recomendo!!! Gente não deixem de levar seus filhos em especialistas como a @dra.sabrinamzanon ela é além de ótima dentista o manejo com a criança é perfeito, uma habilidade, amor, paciência, carinho e estratégia sem igual! Dra.  você arrasa!!'
         },
         {
-            image: 'static/img/container_1/commentsSection/depoiment-1.png',
-            name: 'Camila Bitencourt',
-            label: 'mãe',
-            depoiment: 'Essa dentista eu super recomendo!!! Gente não deixem de levar seus filhos em especialistas como a @dra.sabrinamzanon ela é além de ótima dentista o manejo com a criança é perfeito, uma habilidade, amor, paciência, carinho e estratégia sem igual! Dra.  você arrasa!!'
+            image: 'static/img/container_1/commentsSection/depos/Eder-Zawaski.png',
+            name: 'Éder Zawaski',
+            label: 'pai',
+            depoiment: 'A primeira ida do Arthur ao dentista foi com a Dra.Sabrina, foi a melhor escolha, ela nos recebeu com muita paciência, deixou ele se adaptar ao consultório, deixou ele tocar nos manequins explicando com linguagem lúdica, hoje ele não tem medo de ir ao dentista.'
         },
         {
-            image: 'static/img/container_1/commentsSection/depoiment-1.png',
-            name: 'Camila Bitencourt',
+            image: 'static/img/container_1/commentsSection/depos/Jordana-Vivan.png',
+            name: 'Jordana Vivan Haake',
             label: 'mãe',
-            depoiment: 'Essa dentista eu super recomendo!!! Gente não deixem de levar seus filhos em especialistas como a @dra.sabrinamzanon ela é além de ótima dentista o manejo com a criança é perfeito, uma habilidade, amor, paciência, carinho e estratégia sem igual! Dra.  você arrasa!!'
-        }
+            depoiment: 'Oi Dra... tudo bem? Queria muito agradecer pela consulta com o Vicente. Obrigada pela paciência e carinho com seus pacientes.'
+        },
+        {
+            image: 'static/img/container_1/commentsSection/depos/Mayra-Gomide.png',
+            name: 'Mayra Gomide',
+            label: 'mãe',
+            depoiment: 'Dra. Sabrina , é uma verdadeira “encantadora” de crianças. Atendeu minha filha respeitando sua particularidade e vontades. Deixando tudo fluir da melhor forma possível. Lolo está encantada com a tia Sa!'
+        },
+        {
+            image: 'static/img/container_1/commentsSection/depos/Thais-Pereira.png',
+            name: 'Thaís T. Pereira',
+            label: 'mãe',
+            depoiment: 'Bom, primeiramente, a Dra Sabrina foi o nosso anjo, em um momento “difícil” ela conseguiu passar tranquilidade pra todos, a Chloe perguntava quando ia na Dra Sabrina, se arrumava toda e amava estar com a Dra. Fora isso, que pra mamãe e pra Chloe já é de grande importância, a Dra Sabrina é muito profissional, atenciosa e cuidadosa. Só coisas boas, uma excelente profissional.'
+        },
+        {
+            image: 'static/img/container_1/commentsSection/depos/Fernanda-Pessi.png',
+            name: 'Fernanda Pessi',
+            label: 'mãe',
+            depoiment: 'Quando você encontra a dentista dos sonhos tudo muda, o que era um desespero virou uma diversão. Só eu sei em quantas dentistas passamos não foi fácil lembro que uma vez paguei uma consulta e ela não abriu a boca nem um segundo e fazia ânsia quando o Dr. colocava a mão no queixo dela. Hoje estamos em ótimas mãos, parabéns Dra. Sabrina você é top.'
+        },
+        {
+            image: 'static/img/container_1/commentsSection/depos/Jerusa-Polo.png',
+            name: 'Jerusa Polo',
+            label: 'mãe',
+            depoiment: 'Samuel perdeu o medo de dentista, você é sensacional! Obrigada pelo serviço de qualidade e pelo carinho com meu tesouro.'
+        },
+        {
+            image: 'static/img/container_1/commentsSection/depos/Raquel-Victor.png',
+            name: 'Raquel Vitor',
+            label: 'mãe',
+            depoiment: 'Maravilhosa, e única a experiência que tive com o meu pequeno foi maravilhoso a confiança que vc passou pra ele, tornou o menino corajoso que ele é hoje.'
+        },
+        {
+            image: 'static/img/container_1/commentsSection/depos/Sabrina-Mello.png',
+            name: 'Sabrina Mello',
+            label: 'mãe',
+            depoiment: 'Essa dentista eu super recomendo!!! Gente não deixem de levar seus filhos em especialistas como a @dra.sabrinamzanon ela é além de ótima dentista o manejo com a criança é perfeito, uma habilidade, amor, paciência, carinho e estratégia sem igual! Dra.  você arrasa!!'
+        },
+        {
+            image: 'static/img/container_1/commentsSection/depos/Aline-Xavier.png',
+            name: 'Aline Xavier',
+            label: 'mãe',
+            depoiment: 'Oi Sabrina, td bem? Quero agradecer o seu ótimo atendimento para meu João. Ele tem autismo e sempre foi atendido com a maior paciência, usando o tigrao de forma lúdica. Obrigada por tanto ❤️'
+        },
+        {
+            image: 'static/img/container_1/commentsSection/depos/Gabrielle-Novak.png',
+            name: 'Gabrielle T. Novak Foés',
+            label: 'mãe',
+            depoiment: 'Dra. Sabrina é uma ótima profissional e sempre foi super atenciosa com meu filho! Paciente e com um jeitinho meigo, faz com que a visita ao dentista das nossas crianças seja mais leve! ❤️'
+        },
+        {
+            image: 'static/img/container_1/commentsSection/depos/Tatiane-Florencio.png',
+            name: 'Tatiane Florêncio Burg',
+            label: 'mãe',
+            depoiment: <>
+            Sou Tatiane mamãe da Alice de 6 aninhos, procuramos a Dra Sabrina pela indicação de uma amiga, a mamãe da Valentina pois Alice precisava fazer consulta de rotina, e nos deparamos com essa profissional incrível que conquistou a Alice desde a primeira consulta. Quando ficávamos alguns meses sem ir na Dra Sabrina ela me questionava quando era dia de ir na dentista novamente. Lá ela deixava a Dra fazer a limpezas tranquilamente, deitada relaxada com a perna cruzada hahahah, até anestesia tomou para tirar um bichinho e foi super de boa, quando rolava uns chorinhos a Dra cuidadosamente conversava com ela e assim seguia o atendimento. 
+            </>
+        },
     ],
     odonto: {
         title: 'O trabalho de uma Odontopediatra',
