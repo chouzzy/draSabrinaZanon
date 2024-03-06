@@ -179,13 +179,16 @@ export function Menu() {
 
                 {/* Imagem */}
                 <Flex
-                    my={['2rem', '2rem', '2rem', 'auto', 'auto']}
-                    minH={['20rem', '0', '0', '0', '30rem']}
-                    h={['initial', '0px', '0px', '0px', 'initial']}
+                    my={['2rem', '2rem', '4rem', '8rem', 'auto']}
+                    minH={['20rem', '0', '32rem', '36rem', '36rem']}
+                    h={['100%', '0px', '100%', '100%', 'initial']}
+                    w='100%'
+                    px={[8, 32, 32, 32, 0]}
                 >
-                    <Image
+                    {/* <Image
                         src={specialitiesSectionsData.specs[activeIndex].image}
-                        minW={['100%','100%','20rem','20rem','20rem']}
+                        // h={['100%','100%','20rem','20rem','auto']}
+                        minW={['100%','100%','20rem','20rem','24rem']}
                         objectFit={'cover'}
                         borderRadius={[
                             "40px 40px 40px 40px",
@@ -196,7 +199,24 @@ export function Menu() {
                         ]}
                         p={[8, 32, 32, 8, 8]}
 
-                    />
+                    /> */}
+                    <Flex
+                        bgImage={specialitiesSectionsData.specs[activeIndex].image}
+                        h={['20rem','20rem','32rem','auto','auto']}
+                        minW={['100%','100%','100%','100%','24rem']}
+                        bgPos={'center'}
+                        bgSize={'cover'}
+                        borderRadius={[
+                            "40px 40px 40px 40px",
+                            "100px 100px 100px 100px",
+                            "64px 64px 64px 64px",
+                            "64px 64px 64px 64px",
+                            "200px 200px 0px 0px"
+                        ]}
+                        boxSizing="border-box"
+                    >
+
+                    </Flex>
                 </Flex>
             </Flex>
         </>
