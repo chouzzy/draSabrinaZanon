@@ -8,6 +8,7 @@ import { CommentsSection } from "./CommentsSection";
 import { Footer } from "./Footer";
 import { MainMobileSection } from "./MainMobileSection";
 import { StepToStepSection } from "./StepToStepSection";
+import WhatsButton from "../WhatsButton";
 
 
 export function Container_1() {
@@ -54,6 +55,8 @@ export function Container_1() {
             <CommentsSection />
 
             <Footer />
+
+            <WhatsButton/>
         </Container>
     )
 }
