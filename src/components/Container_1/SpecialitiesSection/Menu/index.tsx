@@ -149,6 +149,7 @@ export function Menu() {
                     pr={[8, 8, 8, 24, 24]}
                     pl={[8, 8, 8, 0, 0]}
                     py={0}
+                    w='100%'
                 >
                     <Text
                         fontSize={'2.5rem'}
@@ -182,7 +183,7 @@ export function Menu() {
                     my={['2rem', '2rem', '4rem', '8rem', 'auto']}
                     minH={['20rem', '0', '32rem', '36rem', '36rem']}
                     h={['100%', '0px', '100%', '100%', 'initial']}
-                    w='100%'
+                    w={['100%', '100%', '100%', '100%', 'initial']}
                     px={[8, 32, 32, 32, 0]}
                 >
                     {/* <Image
