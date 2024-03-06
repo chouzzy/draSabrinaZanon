@@ -156,7 +156,7 @@ export function Menu() {
                         fontWeight={'700'}
                         textAlign={['center', 'center', 'center', 'left', 'left']}
                     >
-                        O que é e como funciona?
+                        {specialitiesSectionsData.specs[activeIndex].title_description}
                     </Text>
                     <Text
                         fontSize={'1.125rem'}

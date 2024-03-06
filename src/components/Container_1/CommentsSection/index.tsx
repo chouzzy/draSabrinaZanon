@@ -9,13 +9,6 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
 
 import { } from "react-icons/bi";
-import { TfiQuoteRight } from "react-icons/tfi";
-import { useRef } from "react";
-import { commentsSectionData } from "./data";
-import { CaretCircleLeft, CaretCircleRight, Quotes } from "phosphor-react";
-import { Header } from "./Header";
-import { aboutSectionData } from "../AboutSection/data";
-import { AgendeUmaConsultaButton } from "../../AgendeUmaConsultaButton";
 import { Carousel_1 } from "./Carousel_1";
 import { Carousel_2 } from "./Carousel_2";
 import { JobInfo } from "./JobInfo";

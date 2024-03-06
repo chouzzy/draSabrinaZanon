@@ -210,11 +210,11 @@ export function Carousel_2() {
                                 <Image
                                     src='static/img/container_1/commentsSection/quote.png'
                                     // w={[24, 32, 32, 32, '100%']}
-                                    h={[24, 32, 32, 32, '5%']}
+                                    h={[24, 32, 32, 32, 16]}
                                 />
                                 <Image
                                     src='static/img/container_1/commentsSection/quote.png'
-                                    h={[24, 32, 32, 32, '5%']}
+                                    h={[24, 32, 32, 32, 16]}
                                 />
                             </Flex>
                         </Flex>
