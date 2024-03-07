@@ -16,7 +16,7 @@ const footerData = {
     mapsUrls: [
         {
             id:0,
-            name:'The Uniq clinic',
+            name:'The U.niq clinic',
             url: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3656.808945713518!2d-46.6591069!3d-23.5753043!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c29adb776d%3A0x5bac87aa7a71c349!2sR.%20Estados%20Unidos%2C%20136%20-%20Jardim%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001427-000!5e0!3m2!1spt-BR!2sbr!4v1709142810101!5m2!1spt-BR!2sbr",
 
             
