@@ -45,7 +45,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'AW-CODIGO');`
+            gtag('config', 'AW-16495746394');`
          }}>
          </Script>
 
